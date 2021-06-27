@@ -1,0 +1,231 @@
+:root {
+    color-scheme: light;
+    font-family: ui-sans-serif;
+    --link-color: #001ae4;
+    --link-visited-color: #4e2286;
+    --sidebar-background-color: #ECECEC;
+    --navbar-background-image: linear-gradient(#E5E5E5, #CDCDCD);
+    --navbar-button-fill: #292929; /* 41 */
+    --navbar-button-hover-fill: #000000; /* 0 */
+    --blockquote-color: #4D4D4D; /* 77 */
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        --link-color: #0A84FF;
+        --link-visited-color: #5E5CE6;
+        --sidebar-background-color: #353535;
+        --navbar-background-image: linear-gradient(#454545, #393939);
+        --navbar-button-fill: #D6D6D6; /* 255 - 41 = 214 */
+        --navbar-button-hover-fill: #FFFFFF; /* 255 */
+        --blockquote-color: #B2B2B2; /* 255 - 77 = 178 */
+    }
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Don't underline on touch-screen devices (otherwise, the underline never goes away). */
+@media (hover: none) {
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+pre > code {
+    font-family: ui-monospace;
+}
+
+/* Remove default bullets */
+.nested {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+    margin: 0;
+    padding: 8px;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "▶ 📁";
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    content: "▼ 📁";
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+    padding-top: 8px;
+}
+
+.nested > li > a::before {
+    content: "    📄";
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.nested > li {
+    padding-top: 8px;
+}
+
+#myUL > li > a::before {
+    content: "    📄";
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#myUL > li {
+    padding-top: 8px;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
+
+.navbar {
+    overflow: hidden;
+    background-image: var(--navbar-background-image);
+    position: fixed; /* Set the navbar to fixed position */
+    left: 0;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 44px; /* aselvia: the size of Apple.com's nav bar */
+    z-index: 1;
+}
+
+.sidebar {
+    left: 0;
+    width: 0;
+    top: 44px;
+    position: fixed;
+    white-space: nowrap;
+    z-index: 1;
+    background-color: var(--sidebar-background-color);
+
+    /*This fixes vertical scrolling on the sidebar when it's constrained.*/
+    height: calc(100% - 44px);
+    overflow: auto;
+}
+
+.sidebar ul li a {
+    /*This adds padding to the right of a file name in the sidebar so when it overflows and the user scrolls to the right, the text isn't so tight against the edge*/
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.caret {
+    /*This adds padding to the right of a directory name in the sidebar so when it overflows and the user scrolls to the right, the text isn't so tight against the edge*/
+    padding-right: 8px;
+}
+
+.openbtn {
+    cursor: pointer;
+    fill: var(--navbar-button-fill);
+
+    /*center button*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.openbtn:hover {
+    fill: var(--navbar-button-hover-fill);
+}
+
+#sidebarIcon {
+    padding-left: 12px; /* Consistency with github icon */
+}
+
+#icon {
+    left: 50%;
+}
+
+#github {
+    right: 0;
+    padding-right: 12px; /* Just enough space to make the scroll bar not clash. */
+}
+
+#main {
+    position: absolute;
+    padding-left: 4px; /* By default, Safari adds 8px of padding to the left of html content. I am adding 4px here to match the 12 I apply on the right so the scroll bar doesn't interfere. */
+    padding-right: 12px; /* Just enough space to make the scroll bar not clash. */
+    top: 44px;
+    overflow-x: scroll;
+}
+
+/*https://webkit.org/blog/7929/designing-websites-for-iphone-x/*/
+@media (hover: none) {
+    #main {
+        padding-left: max(4px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+    }
+    #myUL {
+        padding: 8px max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+    }
+    #sidebarIcon {
+        padding-left: max(12px, env(safe-area-inset-left)); /* Consistency with github icon */
+    }
+    #github {
+        padding-right: max(12px, env(safe-area-inset-right)); /* Just enough space to make the scroll bar not clash. */
+    }
+}
+
+/* Don't show title or sections with normal link colors. */
+.section a,
+.title a,
+.section a:visited,
+.title a:visited {
+    color: currentColor;
+}
+
+/* offset the page when the user accesses a section link to account for navbar height & padding */
+/* 44 (navbar height) + 16 (padding) = 60 */
+.section:before,
+.title:before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin: -60px 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 12px;
+    border-left: 1px solid var(--blockquote-color);
+    color: var(--blockquote-color);
+    vertical-align: baseline;
+}
