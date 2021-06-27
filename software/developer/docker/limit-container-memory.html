@@ -1,0 +1,361 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all">
+<meta charset="utf-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<head>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+<!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+<!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+<!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888">
+  <meta name="apple-mobile-web-app-title" content="Journal">
+  <meta name="application-name" content="Journal">
+<!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff">
+
+
+
+
+
+  <title>Limit Container Memory</title>
+</head>
+<body>
+<div class="navbar">
+  <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+    <title>Show sidebar</title>
+    <use xlink:href="/assets/images/icons/Sidebar.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+    <title>Open root</title>
+    <use xlink:href="/assets/images/icons/Journal.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+    <title>Edit on GitHub</title>
+    <use xlink:href="/assets/images/icons/GitHub.svg#icon"/>
+  </svg>
+</div>
+<div id="mySidebar" class="sidebar">
+  <ul id="myUL">
+    <li>
+      <span class="caret"><a href="../../../index.html">Journal</a></span>
+      <ul class="nested">
+        <li><a href="../../../test.html">Title</a></li>
+        <li>
+          <span class="caret">architecture</span>
+          <ul class="nested">
+            <li><a href="../../../architecture/ideas.html">Ideas</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">colophon</span>
+          <ul class="nested">
+            <li><a href="../../../colophon/content-updates.html">Content Updates</a></li>
+            <li><a href="../../../colophon/hosting.html">Hosting</a></li>
+            <li><a href="../../../colophon/icons.html">Icons</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../../games/index.html">Games</a></span>
+          <ul class="nested">
+            <li>
+              <span class="caret"><a href="../../../games/pokemon/index.html">Pokémon</a></span>
+              <ul class="nested">
+                <li><a href="../../../games/pokemon/complete-a-living-dex.html">Complete a Living Dex</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../../journaling/index.html">Journaling</a></span>
+          <ul class="nested">
+            <li><a href="../../../journaling/configure-gpg-signing-in-working-copy.html">Configure GPG Signing in Working Copy</a></li>
+            <li><a href="../../../journaling/enable-code-syntax-highlighting-in-ia-writer-previews.html">Enable Code Syntax Highlighting in iA Writer Previews</a></li>
+            <li><a href="../../../journaling/expose-working-copy-as-a-document-provider.html">Expose Working Copy as a Document Provider</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../../marketing/index.html">Marketing</a></span>
+          <ul class="nested">
+            <li><a href="../../../marketing/capture-iphone-screenshots-with-consistent-time.html">Capture iPhone Screenshots with Consistent Time</a></li>
+            <li><a href="../../../marketing/embed-screenshots-in-apple-product-images.html">Embed Screenshots in Apple Product Images</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../../research/index.html">Research</a></span>
+          <ul class="nested">
+            <li><a href="../../../research/ideas.html">Ideas</a></li>
+            <li>
+              <span class="caret"><a href="../../../research/psychedelics/index.html">Psychedelics</a></span>
+              <ul class="nested">
+                <li><a href="../../../research/psychedelics/people.html">People</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../index.html">Software</a></span>
+          <ul class="nested">
+            <li>
+              <span class="caret"><a href="../index.html">Developer</a></span>
+              <ul class="nested">
+                <li><a href="../favicons.html">Favicons</a></li>
+                <li><a href="../google-cloud-storage.html">Google Cloud Storage</a></li>
+                <li><a href="../return-a-file-stored-in-google-cloud-storage-via-a-play-application.html">Return a File Stored in Google Cloud Storage via a Play Application</a></li>
+                <li><a href="../serve-website-on-google-kubernetes-engine-over-https.html">Serve Website on Google Kubernetes Engine over HTTPS</a></li>
+                <li><a href="../upload-files-to-google-cloud-storage-via-a-github-action.html">Upload Files to Google Cloud Storage via a GitHub Action</a></li>
+                <li>
+                  <span class="caret"><a href="../akka/index.html">Akka</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../akka/streams/index.html">Streams</a></span>
+                      <ul class="nested">
+                        <li><a href="../akka/streams/ecosystem.html">Ecosystem</a></li>
+                        <li><a href="../akka/streams/integrate-with-akka-cluster.html">Integrate with Akka Cluster</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">alpakka</span>
+                  <ul class="nested">
+                    <li><a href="../alpakka/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../browsers/index.html">Browsers</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../browsers/safari/index.html">Safari</a></span>
+                      <ul class="nested">
+                        <li><a href="../browsers/safari/empty-caches.html">Empty Caches</a></li>
+                        <li><a href="../browsers/safari/open-a-local-html-file.html">Open a Local HTML File</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../commands/index.html">commands</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../commands/sed/index.html"><code>sed</code></a></span>
+                      <ul class="nested">
+                        <li><a href="../commands/sed/replace-string-with-substitution-containing-slashes.html">Replace String with Substitution Containing Slashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../css/index.html">CSS</a></span>
+                  <ul class="nested">
+                    <li><a href="../css/adapt-svg-icons-to-dark-mode.html">Adapt SVG Icons to Dark Mode</a></li>
+                    <li><a href="../css/center-a-button.html">Center a Button</a></li>
+                    <li><a href="../css/change-link-color-on-hover.html">Change Link Color on Hover</a></li>
+                    <li><a href="../css/create-a-color-gradient.html">Create a Color Gradient</a></li>
+                    <li><a href="../css/dark-mode.html">Dark Mode</a></li>
+                    <li><a href="../css/decide-whether-to-put-a-link-in-a-header-or-vice-versa.html">Decide Whether to Put a Link in a Header or Vice Versa</a></li>
+                    <li><a href="../css/disable-permanent-hover-effects-on-touch-screen-devices.html">Disable Permanent Hover Effects on Touch-screen Devices</a></li>
+                    <li><a href="../css/fit-an-image-within-its-container.html">Fit an Image within Its Container</a></li>
+                    <li><a href="../css/lay-out-a-web-page-correctly-on-iphones-with-notches-in-landscape.html">Lay out a Web Page Correctly on iPhones with Notches in Landscape</a></li>
+                    <li><a href="../css/offset-anchor-links.html">Offset Anchor Links</a></li>
+                    <li><a href="../css/set-the-viewport.html">Set the Viewport</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="index.html">Docker</a></span>
+                  <ul class="nested">
+                    <li><a href="add-curl-dynamically.html">Add curl Dynamically</a></li>
+                    <li><a href="get-a-shell-into-a-running-container.html">Get a Shell into a Running Container</a></li>
+                    <li><a href="get-started.html">Get Started</a></li>
+                    <li><a href="#">Limit Container Memory</a></li>
+                    <li><a href="parameterize-a-dockerfile.html">Parameterize a Dockerfile</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">github</span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret">actions</span>
+                      <ul class="nested">
+                        <li><a href="../github/actions/build-a-scala-app.html">Build a Scala App</a></li>
+                        <li><a href="../github/actions/checkout-multiple-repos.html">Checkout Multiple Repos</a></li>
+                        <li><a href="../github/actions/deploy-an-app-to-google-kubernetes-engine.html">Deploy an App to Google Kubernetes Engine</a></li>
+                        <li><a href="../github/actions/get-started.html">Get Started</a></li>
+                        <li><a href="../github/actions/upload-files-to-google-cloud-storage.html">Upload Files to Google Cloud Storage</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../google-cloud-platform/index.html">Google Cloud Platform (GCP)</a></span>
+                  <ul class="nested">
+                    <li><a href="../google-cloud-platform/get-started.html">Get Started</a></li>
+                    <li>
+                      <span class="caret"><a href="../google-cloud-platform/google-kubernetes-engine/index.html">Google Kubernetes Engine (GKE)</a></span>
+                      <ul class="nested">
+                        <li><a href="../google-cloud-platform/google-kubernetes-engine/create-an-ingress-to-load-balance-over-the-cluster.html">Create an Ingress to Load Balance over the Cluster</a></li>
+                        <li><a href="../google-cloud-platform/google-kubernetes-engine/get-started.html">Get Started</a></li>
+                        <li><a href="../google-cloud-platform/google-kubernetes-engine/perform-a-rolling-update.html">Perform a Rolling Update</a></li>
+                        <li><a href="../google-cloud-platform/google-kubernetes-engine/use-a-static-ip-address.html">Use a Static IP Address</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../integrated-development-environments/index.html">Integrated Development Environments (IDEs)</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../integrated-development-environments/intellij-idea/index.html">IntelliJ IDEA</a></span>
+                      <ul class="nested">
+                        <li><a href="../integrated-development-environments/intellij-idea/features.html">Features</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="caret"><a href="../integrated-development-environments/xcode/index.html">Xcode</a></span>
+                      <ul class="nested">
+                        <li><a href="../integrated-development-environments/xcode/extensions.html">Extensions</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../kubernetes/index.html">Kubernetes</a></span>
+                  <ul class="nested">
+                    <li><a href="../kubernetes/configure-memory-resources.html">Configure Memory Resources</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../namecheap/index.html">Namecheap</a></span>
+                  <ul class="nested">
+                    <li><a href="../namecheap/create-private-email-mailbox.html">Manage Private Email Mailbox</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">play</span>
+                  <ul class="nested">
+                    <li><a href="../play/configure-https.html">Configure HTTPS</a></li>
+                    <li><a href="../play/configure-memory.html">Configure Memory</a></li>
+                    <li><a href="../play/get-started.html">Get Started</a></li>
+                    <li><a href="../play/integrate-with-akka.html">Integrate with Akka</a></li>
+                    <li><a href="../play/respond-with-html-string.html">Respond with HTML String</a></li>
+                    <li><a href="../play/run-on-google-kubernetes-engine.html">Run on Google Kubernetes Engine</a></li>
+                    <li><a href="../play/run-via-docker.html">Run via Docker</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../scala/index.html">Scala</a></span>
+                  <ul class="nested">
+                    <li><a href="../scala/adoption.html">Adoption</a></li>
+                    <li><a href="../scala/do-not-ignore-the-g8-directory-created-by-giter8.html">Do Not Ignore the .g8 Directory Created by Giter8</a></li>
+                    <li><a href="../scala/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../swift/index.html">Swift</a></span>
+                  <ul class="nested">
+                    <li><a href="../swift/ast-explorer.html">AST Explorer</a></li>
+                    <li>
+                      <span class="caret">swift-on-server</span>
+                      <ul class="nested">
+                        <li><a href="../swift/swift-on-server/get-started.html">Get Started</a></li>
+                        <li><a href="../swift/swift-on-server/open-source-projects.html">Open-source Projects</a></li>
+                        <li><a href="../swift/swift-on-server/swift-cluster-membership.html">Swift Cluster Membership</a></li>
+                        <li><a href="../swift/swift-on-server/use-clion.html">Use CLion</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../swiftui/index.html">SwiftUI</a></span>
+                  <ul class="nested">
+                    <li><a href="../swiftui/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../uikit/index.html">UIKit</a></span>
+                  <ul class="nested">
+                    <li><a href="../uikit/wkwebview-versus-sfsafariviewcontroller.html">WKWebView versus SFSafariViewController</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../vapor/index.html">Vapor</a></span>
+                  <ul class="nested">
+                    <li><a href="../vapor/integrate-with-docker.html">Integrate with Docker</a></li>
+                    <li><a href="../vapor/view-public-assets-when-run-in-xcode.html">View Public Assets When Run in Xcode</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../yaml/index.html">YAML</a></span>
+                  <ul class="nested">
+                    <li><a href="../yaml/yaml-vs-yml.html">.yaml vs. .yml</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="caret"><a href="../../user/index.html">User</a></span>
+              <ul class="nested">
+                <li>
+                  <span class="caret"><a href="../../user/operating-systems/index.html">Operating Systems</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../../user/operating-systems/macos/index.html">macOS</a></span>
+                      <ul class="nested">
+                        <li><a href="../../user/operating-systems/macos/apps.html">Apps</a></li>
+                        <li><a href="../../user/operating-systems/macos/bootstrap.html">Bootstrap</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">todo</span>
+          <ul class="nested">
+            <li><a href="../../../todo/change-link-colors-in-dark-mode.html">Change Link Colors in Dark Mode</a></li>
+            <li><a href="../../../todo/create-a-navigation-bar.html">Create a Navigation Bar</a></li>
+            <li><a href="../../../todo/create-a-sidebar.html">Create a Sidebar</a></li>
+            <li><a href="../../../todo/digital-gardening.html">Digital Gardening</a></li>
+            <li><a href="../../../todo/get-sf-symbols-in-svg-format.html">Get SF Symbols in SVG Format</a></li>
+            <li><a href="../../../todo/honor-dynamic-type-settings-on-a-website.html">Honor Dynamic Type Settings on a Website</a></li>
+            <li><a href="../../../todo/host-a-website.html">Host a Website</a></li>
+            <li><a href="../../../todo/similar-websites.html">Similar Websites</a></li>
+            <li><a href="../../../todo/static-site-generators.html">Static Site Generators</a></li>
+            <li><a href="../../../todo/syntax-highlighting.html">Syntax Highlighting</a></li>
+            <li><a href="../../../todo/use-the-system-font-on-a-website.html">Use the System Font on a Website</a></li>
+            <li><a href="../../../todo/view-websites-in-dark-mode.html">View Websites in Dark Mode</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../../writing/index.html">Writing</a></span>
+          <ul class="nested">
+            <li><a href="../../../writing/terminology.html">Terminology</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="content" id="main">
+  <h1 id="limit-container-memory" class="title">
+    <a href="#limit-container-memory">Limit Container Memory</a>
+  </h1>
+  <p>If you need to enforce strict memory limits within your container, you should reference <a href="https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory"><em>Limit a Container&#39;s Access to Memory</em></a>. While troubleshooting, you may also find useful information within <a href="https://dev.to/rubberduck/how-to-see-memory-and-cpu-usage-for-all-your-docker-containers"><em>How to See Memory and CPU Usage for All Your Docker Containers</em></a>, specifically its description of how to use <code>docker stats</code>. </p>
+</div>
+</body>
+<!-- This script must be at the end for the navigation bar to work. -->
+<script src="/assets/javascripts/main.js"></script>
+</html>

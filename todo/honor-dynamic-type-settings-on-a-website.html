@@ -1,0 +1,362 @@
+<html>
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all">
+<meta charset="utf-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<head>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+<!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+<!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+<!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888">
+  <meta name="apple-mobile-web-app-title" content="Journal">
+  <meta name="application-name" content="Journal">
+<!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff">
+
+
+
+
+
+  <title>Honor Dynamic Type Settings on a Website</title>
+</head>
+<body>
+<div class="navbar">
+  <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+    <title>Show sidebar</title>
+    <use xlink:href="/assets/images/icons/Sidebar.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+    <title>Open root</title>
+    <use xlink:href="/assets/images/icons/Journal.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+    <title>Edit on GitHub</title>
+    <use xlink:href="/assets/images/icons/GitHub.svg#icon"/>
+  </svg>
+</div>
+<div id="mySidebar" class="sidebar">
+  <ul id="myUL">
+    <li>
+      <span class="caret"><a href="../index.html">Journal</a></span>
+      <ul class="nested">
+        <li><a href="../test.html">Title</a></li>
+        <li>
+          <span class="caret">architecture</span>
+          <ul class="nested">
+            <li><a href="../architecture/ideas.html">Ideas</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">colophon</span>
+          <ul class="nested">
+            <li><a href="../colophon/content-updates.html">Content Updates</a></li>
+            <li><a href="../colophon/hosting.html">Hosting</a></li>
+            <li><a href="../colophon/icons.html">Icons</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../games/index.html">Games</a></span>
+          <ul class="nested">
+            <li>
+              <span class="caret"><a href="../games/pokemon/index.html">Pokémon</a></span>
+              <ul class="nested">
+                <li><a href="../games/pokemon/complete-a-living-dex.html">Complete a Living Dex</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../journaling/index.html">Journaling</a></span>
+          <ul class="nested">
+            <li><a href="../journaling/configure-gpg-signing-in-working-copy.html">Configure GPG Signing in Working Copy</a></li>
+            <li><a href="../journaling/enable-code-syntax-highlighting-in-ia-writer-previews.html">Enable Code Syntax Highlighting in iA Writer Previews</a></li>
+            <li><a href="../journaling/expose-working-copy-as-a-document-provider.html">Expose Working Copy as a Document Provider</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../marketing/index.html">Marketing</a></span>
+          <ul class="nested">
+            <li><a href="../marketing/capture-iphone-screenshots-with-consistent-time.html">Capture iPhone Screenshots with Consistent Time</a></li>
+            <li><a href="../marketing/embed-screenshots-in-apple-product-images.html">Embed Screenshots in Apple Product Images</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../research/index.html">Research</a></span>
+          <ul class="nested">
+            <li><a href="../research/ideas.html">Ideas</a></li>
+            <li>
+              <span class="caret"><a href="../research/psychedelics/index.html">Psychedelics</a></span>
+              <ul class="nested">
+                <li><a href="../research/psychedelics/people.html">People</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../software/index.html">Software</a></span>
+          <ul class="nested">
+            <li>
+              <span class="caret"><a href="../software/developer/index.html">Developer</a></span>
+              <ul class="nested">
+                <li><a href="../software/developer/favicons.html">Favicons</a></li>
+                <li><a href="../software/developer/google-cloud-storage.html">Google Cloud Storage</a></li>
+                <li><a href="../software/developer/return-a-file-stored-in-google-cloud-storage-via-a-play-application.html">Return a File Stored in Google Cloud Storage via a Play Application</a></li>
+                <li><a href="../software/developer/serve-website-on-google-kubernetes-engine-over-https.html">Serve Website on Google Kubernetes Engine over HTTPS</a></li>
+                <li><a href="../software/developer/upload-files-to-google-cloud-storage-via-a-github-action.html">Upload Files to Google Cloud Storage via a GitHub Action</a></li>
+                <li>
+                  <span class="caret"><a href="../software/developer/akka/index.html">Akka</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../software/developer/akka/streams/index.html">Streams</a></span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/akka/streams/ecosystem.html">Ecosystem</a></li>
+                        <li><a href="../software/developer/akka/streams/integrate-with-akka-cluster.html">Integrate with Akka Cluster</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">alpakka</span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/alpakka/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/browsers/index.html">Browsers</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../software/developer/browsers/safari/index.html">Safari</a></span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/browsers/safari/empty-caches.html">Empty Caches</a></li>
+                        <li><a href="../software/developer/browsers/safari/open-a-local-html-file.html">Open a Local HTML File</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/commands/index.html">commands</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../software/developer/commands/sed/index.html"><code>sed</code></a></span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/commands/sed/replace-string-with-substitution-containing-slashes.html">Replace String with Substitution Containing Slashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/css/index.html">CSS</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/css/adapt-svg-icons-to-dark-mode.html">Adapt SVG Icons to Dark Mode</a></li>
+                    <li><a href="../software/developer/css/center-a-button.html">Center a Button</a></li>
+                    <li><a href="../software/developer/css/change-link-color-on-hover.html">Change Link Color on Hover</a></li>
+                    <li><a href="../software/developer/css/create-a-color-gradient.html">Create a Color Gradient</a></li>
+                    <li><a href="../software/developer/css/dark-mode.html">Dark Mode</a></li>
+                    <li><a href="../software/developer/css/decide-whether-to-put-a-link-in-a-header-or-vice-versa.html">Decide Whether to Put a Link in a Header or Vice Versa</a></li>
+                    <li><a href="../software/developer/css/disable-permanent-hover-effects-on-touch-screen-devices.html">Disable Permanent Hover Effects on Touch-screen Devices</a></li>
+                    <li><a href="../software/developer/css/fit-an-image-within-its-container.html">Fit an Image within Its Container</a></li>
+                    <li><a href="../software/developer/css/lay-out-a-web-page-correctly-on-iphones-with-notches-in-landscape.html">Lay out a Web Page Correctly on iPhones with Notches in Landscape</a></li>
+                    <li><a href="../software/developer/css/offset-anchor-links.html">Offset Anchor Links</a></li>
+                    <li><a href="../software/developer/css/set-the-viewport.html">Set the Viewport</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/docker/index.html">Docker</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/docker/add-curl-dynamically.html">Add curl Dynamically</a></li>
+                    <li><a href="../software/developer/docker/get-a-shell-into-a-running-container.html">Get a Shell into a Running Container</a></li>
+                    <li><a href="../software/developer/docker/get-started.html">Get Started</a></li>
+                    <li><a href="../software/developer/docker/limit-container-memory.html">Limit Container Memory</a></li>
+                    <li><a href="../software/developer/docker/parameterize-a-dockerfile.html">Parameterize a Dockerfile</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">github</span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret">actions</span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/github/actions/build-a-scala-app.html">Build a Scala App</a></li>
+                        <li><a href="../software/developer/github/actions/checkout-multiple-repos.html">Checkout Multiple Repos</a></li>
+                        <li><a href="../software/developer/github/actions/deploy-an-app-to-google-kubernetes-engine.html">Deploy an App to Google Kubernetes Engine</a></li>
+                        <li><a href="../software/developer/github/actions/get-started.html">Get Started</a></li>
+                        <li><a href="../software/developer/github/actions/upload-files-to-google-cloud-storage.html">Upload Files to Google Cloud Storage</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/google-cloud-platform/index.html">Google Cloud Platform (GCP)</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/google-cloud-platform/get-started.html">Get Started</a></li>
+                    <li>
+                      <span class="caret"><a href="../software/developer/google-cloud-platform/google-kubernetes-engine/index.html">Google Kubernetes Engine (GKE)</a></span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/google-cloud-platform/google-kubernetes-engine/create-an-ingress-to-load-balance-over-the-cluster.html">Create an Ingress to Load Balance over the Cluster</a></li>
+                        <li><a href="../software/developer/google-cloud-platform/google-kubernetes-engine/get-started.html">Get Started</a></li>
+                        <li><a href="../software/developer/google-cloud-platform/google-kubernetes-engine/perform-a-rolling-update.html">Perform a Rolling Update</a></li>
+                        <li><a href="../software/developer/google-cloud-platform/google-kubernetes-engine/use-a-static-ip-address.html">Use a Static IP Address</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/integrated-development-environments/index.html">Integrated Development Environments (IDEs)</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../software/developer/integrated-development-environments/intellij-idea/index.html">IntelliJ IDEA</a></span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/integrated-development-environments/intellij-idea/features.html">Features</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="caret"><a href="../software/developer/integrated-development-environments/xcode/index.html">Xcode</a></span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/integrated-development-environments/xcode/extensions.html">Extensions</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/kubernetes/index.html">Kubernetes</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/kubernetes/configure-memory-resources.html">Configure Memory Resources</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/namecheap/index.html">Namecheap</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/namecheap/create-private-email-mailbox.html">Manage Private Email Mailbox</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">play</span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/play/configure-https.html">Configure HTTPS</a></li>
+                    <li><a href="../software/developer/play/configure-memory.html">Configure Memory</a></li>
+                    <li><a href="../software/developer/play/get-started.html">Get Started</a></li>
+                    <li><a href="../software/developer/play/integrate-with-akka.html">Integrate with Akka</a></li>
+                    <li><a href="../software/developer/play/respond-with-html-string.html">Respond with HTML String</a></li>
+                    <li><a href="../software/developer/play/run-on-google-kubernetes-engine.html">Run on Google Kubernetes Engine</a></li>
+                    <li><a href="../software/developer/play/run-via-docker.html">Run via Docker</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/scala/index.html">Scala</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/scala/adoption.html">Adoption</a></li>
+                    <li><a href="../software/developer/scala/do-not-ignore-the-g8-directory-created-by-giter8.html">Do Not Ignore the .g8 Directory Created by Giter8</a></li>
+                    <li><a href="../software/developer/scala/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/swift/index.html">Swift</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/swift/ast-explorer.html">AST Explorer</a></li>
+                    <li>
+                      <span class="caret">swift-on-server</span>
+                      <ul class="nested">
+                        <li><a href="../software/developer/swift/swift-on-server/get-started.html">Get Started</a></li>
+                        <li><a href="../software/developer/swift/swift-on-server/open-source-projects.html">Open-source Projects</a></li>
+                        <li><a href="../software/developer/swift/swift-on-server/swift-cluster-membership.html">Swift Cluster Membership</a></li>
+                        <li><a href="../software/developer/swift/swift-on-server/use-clion.html">Use CLion</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/swiftui/index.html">SwiftUI</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/swiftui/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/uikit/index.html">UIKit</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/uikit/wkwebview-versus-sfsafariviewcontroller.html">WKWebView versus SFSafariViewController</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/vapor/index.html">Vapor</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/vapor/integrate-with-docker.html">Integrate with Docker</a></li>
+                    <li><a href="../software/developer/vapor/view-public-assets-when-run-in-xcode.html">View Public Assets When Run in Xcode</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../software/developer/yaml/index.html">YAML</a></span>
+                  <ul class="nested">
+                    <li><a href="../software/developer/yaml/yaml-vs-yml.html">.yaml vs. .yml</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="caret"><a href="../software/user/index.html">User</a></span>
+              <ul class="nested">
+                <li>
+                  <span class="caret"><a href="../software/user/operating-systems/index.html">Operating Systems</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../software/user/operating-systems/macos/index.html">macOS</a></span>
+                      <ul class="nested">
+                        <li><a href="../software/user/operating-systems/macos/apps.html">Apps</a></li>
+                        <li><a href="../software/user/operating-systems/macos/bootstrap.html">Bootstrap</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">todo</span>
+          <ul class="nested">
+            <li><a href="change-link-colors-in-dark-mode.html">Change Link Colors in Dark Mode</a></li>
+            <li><a href="create-a-navigation-bar.html">Create a Navigation Bar</a></li>
+            <li><a href="create-a-sidebar.html">Create a Sidebar</a></li>
+            <li><a href="digital-gardening.html">Digital Gardening</a></li>
+            <li><a href="get-sf-symbols-in-svg-format.html">Get SF Symbols in SVG Format</a></li>
+            <li><a href="#">Honor Dynamic Type Settings on a Website</a></li>
+            <li><a href="host-a-website.html">Host a Website</a></li>
+            <li><a href="similar-websites.html">Similar Websites</a></li>
+            <li><a href="static-site-generators.html">Static Site Generators</a></li>
+            <li><a href="syntax-highlighting.html">Syntax Highlighting</a></li>
+            <li><a href="use-the-system-font-on-a-website.html">Use the System Font on a Website</a></li>
+            <li><a href="view-websites-in-dark-mode.html">View Websites in Dark Mode</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../writing/index.html">Writing</a></span>
+          <ul class="nested">
+            <li><a href="../writing/terminology.html">Terminology</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="content" id="main">
+  <h1 id="honor-dynamic-type-settings-on-a-website" class="title">
+    <a href="#honor-dynamic-type-settings-on-a-website">Honor Dynamic Type Settings on a Website</a>
+  </h1>
+  <p>iOS has a feature named <a href="https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically">Dynamic Type</a> which developers can leverage to render text at user-specified sizes within their apps. To learn more about the feature, refer to the <a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography"><em>Typography</em></a> section of the Apple Human Interface Guidelines. While Dynamic Type primarily benefits iOS apps, websites can also take advantage of this feature to offer readers a seamless experience that suits their visual needs. To see Dynamic Type working on a website, refer to <a href="https://ia11y.github.io/Coding-Patterns/iOS/text-resizing/ios-system-fonts.html">this demo</a>. When you&#39;re ready to begin integrating it into your website, refer to <a href="https://ind.ie/labs/blog/dynamic-type-support"><em>Adding iOS Dynamic Type Support to Better</em></a> and <a href="https://useyourloaf.com/blog/using-dynamic-type-with-web-views"><em>Using Dynamic Type with Web Views</em></a>.</p>
+  <p>It is worth mentioning that Dynamic Type may not provide the right distribution of font categories for your website&#39;s needs. For instance, this website frequently leverages multiple nested layers of headings. Dynamic Type doesn&#39;t have a great solution for that situation unfortunately. While you could at least leverage the <em>body</em> style to correctly-render the main content, remember that this could result in the body font being much larger than the headings if the user&#39;s setting is particularly large. Weigh the costs &amp; benefits with experimentation to determine what&#39;s right for your website. Ultimately, this website chooses not to honor Dynamic Type to prevent the issue described above.</p>
+</div>
+</body>
+<!-- This script must be at the end for the navigation bar to work. -->
+<script src="/assets/javascripts/main.js"></script>
+</html>
