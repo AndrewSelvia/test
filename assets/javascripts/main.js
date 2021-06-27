@@ -25,6 +25,6 @@ function openGitHub() {
         document
             .URL
             .replace(location.origin, "https://github.com/AndrewSelvia")
-            .replace("journal/", "journal/edit/master/")
+            .replace("journal/", "journal/edit/main/")
             .replace(".html", ".md"))
 }
