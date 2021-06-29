@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all">
+<meta charset="utf-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+<!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+<!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+<!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+<!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<!--  <link rel="manifest" href="/site.webmanifest">-->
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888">
+<meta name="apple-mobile-web-app-title" content="Journal">
+<meta name="application-name" content="Journal">
+<!--  <meta name="msapplication-TileColor" content="#da532c">-->
+<meta name="theme-color" content="#ffffff">
+
+<title>Screen Brightness</title>
+<body>
+<div class="navbar">
+  <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+    <title>Show sidebar</title>
+    <use xlink:href="/assets/images/icons/Sidebar.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+    <title>Open root</title>
+    <use xlink:href="/assets/images/icons/Journal.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+    <title>Edit on GitHub</title>
+    <use xlink:href="/assets/images/icons/GitHub.svg#icon"/>
+  </svg>
+</div>
+<div id="mySidebar" class="sidebar">
+  <ul id="myUL">
+    <li>
+      <span class="caret"><a href="../../index.html">Journal</a></span>
+      <ul class="nested">
+        <li><a href="../../test.html">Title</a></li>
+        <li>
+          <span class="caret">architecture</span>
+          <ul class="nested">
+            <li><a href="../../architecture/ideas.html">Ideas</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">career</span>
+          <ul class="nested">
+            <li><a href="../../career/interviewing.html">Interviewing</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">colophon</span>
+          <ul class="nested">
+            <li><a href="../../colophon/content-updates.html">Content Updates</a></li>
+            <li><a href="../../colophon/hosting.html">Hosting</a></li>
+            <li><a href="../../colophon/icons.html">Icons</a></li>
+            <li><a href="../../colophon/progress.html">Progress</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">design</span>
+          <ul class="nested">
+            <li><a href="../../design/command-line-interface.html">Command Line Interface</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">education</span>
+          <ul class="nested">
+            <li><a href="../../education/data-science.html">Data Science</a></li>
+            <li><a href="../../education/machine-learning.html">Machine Learning</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../games/index.html">Games</a></span>
+          <ul class="nested">
+            <li>
+              <span class="caret"><a href="../../games/pokemon/index.html">Pokémon</a></span>
+              <ul class="nested">
+                <li><a href="../../games/pokemon/complete-a-living-dex.html">Complete a Living Dex</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">hardware</span>
+          <ul class="nested">
+            <li><a href="../../hardware/lg-ultrafine-5k.html">LG UltraFine 5K</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">identity</span>
+          <ul class="nested">
+            <li><a href="../../identity/memoji.html">MeMoji</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../journaling/index.html">Journaling</a></span>
+          <ul class="nested">
+            <li><a href="../../journaling/configure-gpg-signing-in-working-copy.html">Configure GPG Signing in Working Copy</a></li>
+            <li><a href="../../journaling/enable-code-syntax-highlighting-in-ia-writer-previews.html">Enable Code Syntax Highlighting in iA Writer Previews</a></li>
+            <li><a href="../../journaling/expose-working-copy-as-a-document-provider.html">Expose Working Copy as a Document Provider</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../marketing/index.html">Marketing</a></span>
+          <ul class="nested">
+            <li><a href="../../marketing/capture-iphone-screenshots-with-consistent-time.html">Capture iPhone Screenshots with Consistent Time</a></li>
+            <li><a href="../../marketing/embed-screenshots-in-apple-product-images.html">Embed Screenshots in Apple Product Images</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">music</span>
+          <ul class="nested">
+            <li><a href="../../music/performances.html">Performances</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../research/index.html">Research</a></span>
+          <ul class="nested">
+            <li><a href="../../research/ideas.html">Ideas</a></li>
+            <li>
+              <span class="caret"><a href="../../research/psychedelics/index.html">Psychedelics</a></span>
+              <ul class="nested">
+                <li><a href="../../research/psychedelics/people.html">People</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../index.html">Software</a></span>
+          <ul class="nested">
+            <li>
+              <span class="caret"><a href="../developer/index.html">Developer</a></span>
+              <ul class="nested">
+                <li><a href="../developer/favicons.html">Favicons</a></li>
+                <li><a href="../developer/google-cloud-storage.html">Google Cloud Storage</a></li>
+                <li><a href="../developer/return-a-file-stored-in-google-cloud-storage-via-a-play-application.html">Return a File Stored in Google Cloud Storage via a Play Application</a></li>
+                <li><a href="../developer/serve-website-on-google-kubernetes-engine-over-https.html">Serve Website on Google Kubernetes Engine over HTTPS</a></li>
+                <li><a href="../developer/store-secrets.html">Store Secrets</a></li>
+                <li><a href="../developer/upload-files-to-google-cloud-storage-via-a-github-action.html">Upload Files to Google Cloud Storage via a GitHub Action</a></li>
+                <li>
+                  <span class="caret"><a href="../developer/akka/index.html">Akka</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../developer/akka/streams/index.html">Streams</a></span>
+                      <ul class="nested">
+                        <li><a href="../developer/akka/streams/ecosystem.html">Ecosystem</a></li>
+                        <li><a href="../developer/akka/streams/integrate-with-akka-cluster.html">Integrate with Akka Cluster</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">alpakka</span>
+                  <ul class="nested">
+                    <li><a href="../developer/alpakka/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">aws</span>
+                  <ul class="nested">
+                    <li><a href="../developer/aws/billing-alarms.html">Billing Alarms</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/browsers/index.html">Browsers</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../developer/browsers/safari/index.html">Safari</a></span>
+                      <ul class="nested">
+                        <li><a href="../developer/browsers/safari/empty-caches.html">Empty Caches</a></li>
+                        <li><a href="../developer/browsers/safari/open-a-local-html-file.html">Open a Local HTML File</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/commands/index.html">Commands</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../developer/commands/sed/index.html"><code>sed</code></a></span>
+                      <ul class="nested">
+                        <li><a href="../developer/commands/sed/replace-string-with-substitution-containing-slashes.html">Replace String with Substitution Containing Slashes</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/css/index.html">CSS</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/css/adapt-svg-icons-to-dark-mode.html">Adapt SVG Icons to Dark Mode</a></li>
+                    <li><a href="../developer/css/center-a-button.html">Center a Button</a></li>
+                    <li><a href="../developer/css/change-link-color-on-hover.html">Change Link Color on Hover</a></li>
+                    <li><a href="../developer/css/create-a-color-gradient.html">Create a Color Gradient</a></li>
+                    <li><a href="../developer/css/dark-mode.html">Dark Mode</a></li>
+                    <li><a href="../developer/css/decide-whether-to-put-a-link-in-a-header-or-vice-versa.html">Decide Whether to Put a Link in a Header or Vice Versa</a></li>
+                    <li><a href="../developer/css/disable-permanent-hover-effects-on-touch-screen-devices.html">Disable Permanent Hover Effects on Touch-screen Devices</a></li>
+                    <li><a href="../developer/css/fit-an-image-within-its-container.html">Fit an Image within Its Container</a></li>
+                    <li><a href="../developer/css/lay-out-a-web-page-correctly-on-iphones-with-notches-in-landscape.html">Lay out a Web Page Correctly on iPhones with Notches in Landscape</a></li>
+                    <li><a href="../developer/css/offset-anchor-links.html">Offset Anchor Links</a></li>
+                    <li><a href="../developer/css/set-the-viewport.html">Set the Viewport</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/docker/index.html">Docker</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/docker/add-curl-dynamically.html">Add curl Dynamically</a></li>
+                    <li><a href="../developer/docker/get-a-shell-into-a-running-container.html">Get a Shell into a Running Container</a></li>
+                    <li><a href="../developer/docker/get-started.html">Get Started</a></li>
+                    <li><a href="../developer/docker/limit-container-memory.html">Limit Container Memory</a></li>
+                    <li><a href="../developer/docker/parameterize-a-dockerfile.html">Parameterize a Dockerfile</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">git</span>
+                  <ul class="nested">
+                    <li><a href="../developer/git/geotag-commits.html">Geotag Commits</a></li>
+                    <li><a href="../developer/git/ignore-changes-to-tracked-file.html">Ignore Changes to Tracked File</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">github</span>
+                  <ul class="nested">
+                    <li><a href="../developer/github/mirroring.html">Mirroring</a></li>
+                    <li>
+                      <span class="caret">actions</span>
+                      <ul class="nested">
+                        <li><a href="../developer/github/actions/build-a-scala-app.html">Build a Scala App</a></li>
+                        <li><a href="../developer/github/actions/checkout-multiple-repos.html">Checkout Multiple Repos</a></li>
+                        <li><a href="../developer/github/actions/deploy-an-app-to-google-kubernetes-engine.html">Deploy an App to Google Kubernetes Engine</a></li>
+                        <li><a href="../developer/github/actions/get-started.html">Get Started</a></li>
+                        <li><a href="../developer/github/actions/upload-files-to-google-cloud-storage.html">Upload Files to Google Cloud Storage</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/google-cloud-platform/index.html">Google Cloud Platform (GCP)</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/google-cloud-platform/get-started.html">Get Started</a></li>
+                    <li>
+                      <span class="caret"><a href="../developer/google-cloud-platform/google-kubernetes-engine/index.html">Google Kubernetes Engine (GKE)</a></span>
+                      <ul class="nested">
+                        <li><a href="../developer/google-cloud-platform/google-kubernetes-engine/create-an-ingress-to-load-balance-over-the-cluster.html">Create an Ingress to Load Balance over the Cluster</a></li>
+                        <li><a href="../developer/google-cloud-platform/google-kubernetes-engine/get-started.html">Get Started</a></li>
+                        <li><a href="../developer/google-cloud-platform/google-kubernetes-engine/perform-a-rolling-update.html">Perform a Rolling Update</a></li>
+                        <li><a href="../developer/google-cloud-platform/google-kubernetes-engine/use-a-static-ip-address.html">Use a Static IP Address</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/integrated-development-environments/index.html">Integrated Development Environments (IDEs)</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="../developer/integrated-development-environments/intellij-idea/index.html">IntelliJ IDEA</a></span>
+                      <ul class="nested">
+                        <li><a href="../developer/integrated-development-environments/intellij-idea/features.html">Features</a></li>
+                        <li><a href="../developer/integrated-development-environments/intellij-idea/plugins.html">Plugins</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="caret"><a href="../developer/integrated-development-environments/xcode/index.html">Xcode</a></span>
+                      <ul class="nested">
+                        <li><a href="../developer/integrated-development-environments/xcode/extensions.html">Extensions</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">jupyter</span>
+                  <ul class="nested">
+                    <li><a href="../developer/jupyter/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/kubernetes/index.html">Kubernetes</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/kubernetes/configure-memory-resources.html">Configure Memory Resources</a></li>
+                    <li><a href="../developer/kubernetes/use-jsonpath.html">Use <code>jsonpath</code> to Format <code>kubectl</code> Output</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">latex</span>
+                  <ul class="nested">
+                    <li><a href="../developer/latex/guides.html">Guides</a></li>
+                    <li><a href="../developer/latex/texify-idea.html">TeXiFy-IDEA</a></li>
+                    <li><a href="../developer/latex/troubleshooting.html">Troubleshooting</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">machine-learning</span>
+                  <ul class="nested">
+                    <li><a href="../developer/machine-learning/non-python-tooling.html">Non-Python Tooling</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">matplotlib</span>
+                  <ul class="nested">
+                    <li><a href="../developer/matplotlib/troubleshooting.html">Troubleshooting</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/namecheap/index.html">Namecheap</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/namecheap/create-private-email-mailbox.html">Manage Private Email Mailbox</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/operating-systems/index.html">Operating Systems</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/operating-systems/use-environment-variables-in-integrated-development-environments.html">Use Environment Variables in Integrated Development Environments</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">play</span>
+                  <ul class="nested">
+                    <li><a href="../developer/play/configure-https.html">Configure HTTPS</a></li>
+                    <li><a href="../developer/play/configure-memory.html">Configure Memory</a></li>
+                    <li><a href="../developer/play/get-started.html">Get Started</a></li>
+                    <li><a href="../developer/play/integrate-with-akka.html">Integrate with Akka</a></li>
+                    <li><a href="../developer/play/respond-with-html-string.html">Respond with HTML String</a></li>
+                    <li><a href="../developer/play/run-on-google-kubernetes-engine.html">Run on Google Kubernetes Engine</a></li>
+                    <li><a href="../developer/play/run-via-docker.html">Run via Docker</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">play-json</span>
+                  <ul class="nested">
+                    <li><a href="../developer/play-json/convert-a-jsvalue-to-a-string.html">Convert a <code>JsValue</code> to a <code>String</code></a></li>
+                    <li><a href="../developer/play-json/snake-case-keys.html">Snake Case Keys</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">python</span>
+                  <ul class="nested">
+                    <li><a href="../developer/python/generate-requirements-txt.html">Generate requirements.txt</a></li>
+                    <li><a href="../developer/python/naming-conventions.html">Naming Conventions</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">sbt</span>
+                  <ul class="nested">
+                    <li><a href="../developer/sbt/dependencies.html">Dependencies</a></li>
+                    <li><a href="../developer/sbt/exclude-transitive-dependencies.html">Exclude Transitive Dependencies</a></li>
+                    <li><a href="../developer/sbt/fix-unknown-artifact-warning-in-intellij-idea.html">Fix Unknown Artifact Warning in IntelliJ IDEA</a></li>
+                    <li><a href="../developer/sbt/get-build-parameters-in-shell.html">Get Build Parameters in Shell</a></li>
+                    <li><a href="../developer/sbt/get-started.html">Get Started</a></li>
+                    <li><a href="../developer/sbt/pass-arguments-via-sbt.html">Pass Arguments via SBT</a></li>
+                    <li><a href="../developer/sbt/plugins.html">Plugins</a></li>
+                    <li><a href="../developer/sbt/sbt-buildinfo.html">sbt-buildinfo</a></li>
+                    <li><a href="../developer/sbt/sbt-docker.html">sbt-docker</a></li>
+                    <li><a href="../developer/sbt/sbt-extras.html">sbt-extras</a></li>
+                    <li><a href="../developer/sbt/sbt-native-packager.html">sbt-native-packager</a></li>
+                    <li><a href="../developer/sbt/view-dependency-tree.html">View Dependency Tree</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/scala/index.html">Scala</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/scala/adoption.html">Adoption</a></li>
+                    <li><a href="../developer/scala/block-until-a-future-completes.html">Block Until a Future Completes</a></li>
+                    <li><a href="../developer/scala/convert-between-list-and-tuple.html">Convert Between List and Tuple</a></li>
+                    <li><a href="../developer/scala/do-not-ignore-the-g8-directory-created-by-giter8.html">Do Not Ignore the .g8 Directory Created by Giter8</a></li>
+                    <li><a href="../developer/scala/execute-shell-commands-from-scala-code.html">Execute Shell Commands from Scala Code</a></li>
+                    <li><a href="../developer/scala/get-started.html">Get Started</a></li>
+                    <li><a href="../developer/scala/tools.html">Tools</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">slf4j</span>
+                  <ul class="nested">
+                    <li><a href="../developer/slf4j/slf4j.html">slf4j</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">sttp</span>
+                  <ul class="nested">
+                    <li><a href="../developer/sttp/parse-response-as-json.html">Parse Response as JSON</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/swift/index.html">Swift</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/swift/ast-explorer.html">AST Explorer</a></li>
+                    <li>
+                      <span class="caret">swift-on-server</span>
+                      <ul class="nested">
+                        <li><a href="../developer/swift/swift-on-server/get-started.html">Get Started</a></li>
+                        <li><a href="../developer/swift/swift-on-server/open-source-projects.html">Open-source Projects</a></li>
+                        <li><a href="../developer/swift/swift-on-server/swift-cluster-membership.html">Swift Cluster Membership</a></li>
+                        <li><a href="../developer/swift/swift-on-server/use-clion.html">Use CLion</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/swiftui/index.html">SwiftUI</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/swiftui/get-started.html">Get Started</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret">tensorflow</span>
+                  <ul class="nested">
+                    <li><a href="../developer/tensorflow/get-started.html">Get Started</a></li>
+                    <li><a href="../developer/tensorflow/macos-support.html">macOS Support</a></li>
+                    <li><a href="../developer/tensorflow/troubleshooting.html">Troubleshooting</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/uikit/index.html">UIKit</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/uikit/wkwebview-versus-sfsafariviewcontroller.html">WKWebView versus SFSafariViewController</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/vapor/index.html">Vapor</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/vapor/integrate-with-docker.html">Integrate with Docker</a></li>
+                    <li><a href="../developer/vapor/view-public-assets-when-run-in-xcode.html">View Public Assets When Run in Xcode</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="../developer/yaml/index.html">YAML</a></span>
+                  <ul class="nested">
+                    <li><a href="../developer/yaml/yaml-vs-yml.html">.yaml vs. .yml</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="caret"><a href="index.html">User</a></span>
+              <ul class="nested">
+                <li><a href="#">Screen Brightness</a></li>
+                <li>
+                  <span class="caret">apps</span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret">keynote</span>
+                      <ul class="nested">
+                        <li><a href="apps/keynote/animations.html">Animations</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="integrated-development-environments/index.html">Integrated Development Environments (IDEs)</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="integrated-development-environments/jetbrains/index.html">JetBrains</a></span>
+                      <ul class="nested">
+                        <li><a href="integrated-development-environments/jetbrains/features.html">Features</a></li>
+                        <li><a href="integrated-development-environments/jetbrains/settings.html">Settings</a></li>
+                        <li>
+                          <span class="caret"><a href="integrated-development-environments/jetbrains/webstorm/index.html">WebStorm</a></span>
+                          <ul class="nested">
+                            <li><a href="integrated-development-environments/jetbrains/webstorm/integrate-multiple-identically-named-directories-into-a-single-webstorm-project.html">Integrate Multiple Identically-named Directories into a Single WebStorm Project</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret"><a href="operating-systems/index.html">Operating Systems</a></span>
+                  <ul class="nested">
+                    <li>
+                      <span class="caret"><a href="operating-systems/macos/index.html">macOS</a></span>
+                      <ul class="nested">
+                        <li><a href="operating-systems/macos/apps.html">Apps</a></li>
+                        <li><a href="operating-systems/macos/bootstrap.html">Bootstrap</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret">todo</span>
+          <ul class="nested">
+            <li><a href="../../todo/change-link-colors-in-dark-mode.html">Change Link Colors in Dark Mode</a></li>
+            <li><a href="../../todo/create-a-navigation-bar.html">Create a Navigation Bar</a></li>
+            <li><a href="../../todo/create-a-sidebar.html">Create a Sidebar</a></li>
+            <li><a href="../../todo/digital-gardening.html">Digital Gardening</a></li>
+            <li><a href="../../todo/get-sf-symbols-in-svg-format.html">Get SF Symbols in SVG Format</a></li>
+            <li><a href="../../todo/honor-dynamic-type-settings-on-a-website.html">Honor Dynamic Type Settings on a Website</a></li>
+            <li><a href="../../todo/host-a-website.html">Host a Website</a></li>
+            <li><a href="../../todo/remove-google-contacts-and-holidays-calendars.html">Remove Google Contacts and Holidays Calendars from Calendar</a></li>
+            <li><a href="../../todo/similar-websites.html">Similar Websites</a></li>
+            <li><a href="../../todo/static-site-generators.html">Static Site Generators</a></li>
+            <li><a href="../../todo/syntax-highlighting.html">Syntax Highlighting</a></li>
+            <li><a href="../../todo/use-the-system-font-on-a-website.html">Use the System Font on a Website</a></li>
+            <li><a href="../../todo/view-websites-in-dark-mode.html">View Websites in Dark Mode</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="caret"><a href="../../writing/index.html">Writing</a></span>
+          <ul class="nested">
+            <li><a href="../../writing/terminology.html">Terminology</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="content" id="main">
+  <h1 id="screen-brightness" class="title">
+    <a href="#screen-brightness">Screen Brightness</a>
+  </h1>
+  <p>I use <a href="https://lunar.fyi">Lunar</a> to change the brightness of my external displays in conjunction with my MacBook Pro. It also supports brightness offsets which come in handy because my external displays are much brighter than my internal display at equivalent levels of screen brightness as the macOS UI displays it. I offset the external displays to -20 so that they are more aligned to the internal one.</p>
+  <p>For some reason, though, the screen brightness buttons on my Magic Keyboard (i.e. F1, F2) modify one of the <strong>external</strong> displays. I have to use <a href="https://github.com/MonitorControl/MonitorControl">MonitorControl</a> to intercept those events and change its settings to have it only update the internal display. If I have it update all the displays, then it causes the screens to flash brightly before Lunar can kick in. I find this annoying. Lunar eases the transition.</p>
+  <p>I also tried out <a href="https://www.nesveda.com/projects/ExternalDisplayBrightness/">ExternalDisplayBrightness</a>. However, it has one pesky issue. It <a href="https://github.com/fnesveda/ExternalDisplayBrightness/issues/19">does not survive sleep cycles</a>.</p>
+</div>
+</body>
+<!-- This script must be at the end for the navigation bar to work. -->
+<script src="/assets/javascripts/main.js"></script>
+</html>
