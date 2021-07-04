@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Syntax Highlighting</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="syntax-highlighting" class="title">
+      <a href="#syntax-highlighting">Syntax Highlighting</a>
+    </h1>
+    <p>Deciding how to add syntax highlighting within code blocks on your website is no small feat. There are various different tools premised upon different architectures. The documentation below attempts to provide a guide to some currently popular approaches.</p>
+    <h2 id="goals" class="section">
+      <a href="#goals">Goals</a>
+    </h2>
+    <p>The criteria which influenced the syntax highlighting system &amp; theme on this website are included below for context:</p>
+    <ul>
+      <li>
+        Extensive language support
+        <ul>
+          <li>Scala</li>
+          <li>Swift</li>
+          <li>Shell scripts</li>
+          <li>Many more...</li>
+        </ul>
+      </li>
+      <li>Actively-maintained, open-source code repository</li>
+      <li>Lightweight integration &amp; maintenance costs </li>
+      <li>Related dark <strong>and</strong> light themes</li>
+      <li>
+        Tasteful use of color
+        <ul>
+          <li>Diverse palette: easy differentiation of elements</li>
+          <li>Avoidance of dark hues: warmer colors are less alarming</li>
+          <li>Lukewarm tones: bright neons are too alarming</li>
+        </ul>
+      </li>
+      <li>
+        Consistency across tools
+        <ul>
+          <li>JetBrains IDEs</li>
+          <li>Xcode</li>
+          <li>Web</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="tools" class="section">
+      <a href="#tools">Tools</a>
+    </h2>
+    <p>The following tools were considered for the syntax highlighting of this website:</p>
+    <ul>
+      <li><a href="https://highlightjs.org">highlight.js</a></li>
+      <li><a href="https://prismjs.com">Prism</a></li>
+      <li><a href="https://github.com/github/linguist">Linguist</a></li>
+      <li><a href="https://pygments.org">Pygments</a></li>
+      <li><a href="https://github.com/rouge-ruby/rouge">Rouge</a></li>
+      <li><a href="https://github.com/googlearchive/code-prettify">code-prettify</a></li>
+    </ul>
+    <h3 id="highlight-js" class="section">
+      <a href="#highlight-js">highlight.js</a>
+    </h3>
+    <p>In the end, highlight.js was the simplest to integrate into the website. The <a href="https://highlightjs.org/usage">usage documentation</a> clearly describes how to get started. The <a href="https://highlightjs.org/static/demo">demo</a> made it easy to explore the various themes as well. It checked all the boxes.</p>
+    <h2 id="prism" class="section">
+      <a href="#prism">Prism</a>
+    </h2>
+    <p>Compared to highlight.js, Prism proved slightly more difficult to integrate into this website due to its different naming scheme for fenced code blocks. For example, rather than &quot;scala&quot;, Prism expects &quot;code.language-scala&quot;. While such a modification is achievable, it was an unnecessary hurdle at the gate.</p>
+    <p>In reality, Prism looks slightly more modern and standards-compliant than highlight.js. In the future, it may be worth revisiting it for this website.<br/></p>
+    <h3 id="linguist" class="section">
+      <a href="#linguist">Linguist</a>
+    </h3>
+    <p>According to <a href="https://stackoverflow.com/a/53709148/6073927">this StackOverflow answer</a>, Linguist (which was originally created &amp; used by GitHub) is not really meant for syntax highlighting:</p>
+    <blockquote>Linguist only detects the language of files; <a href="https://github.com/github/linguist#theres-a-problem-with-the-syntax-highlighting-of-a-file">it doesn&#39;t perform the highlighting itself</a>.</blockquote>
+    <p>Also, according to GitHub&#39;s own documentation, <a href="https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks#syntax-highlighting">Linguist delegates syntax highlighting to third-party grammars</a>:</p>
+    <blockquote>We use Linguist to perform language detection and to select third-party grammars for syntax highlighting. </blockquote>
+    <h3 id="pygments" class="section">
+      <a href="#pygments">Pygments</a>
+    </h3>
+    <p>Pygments has been used by some major websites (i.e. Wikipedia, GitHub, etc.), lending it serious credibility. However, it seems <a href="https://www.greghendershott.com/2014/11/github-dropped-pygments.html">GitHub has moved away from it</a> for performance reasons based on some online discussions. It seems to be an older solution overall. Additionally, compared to highlight.js results, Pygments produced less differentiated results; some elements which were differentiated by highlight.js were conjoined by Pygments. Obviously, the sample size of this testing was small, so account for that. Finally, it was significantly more difficult to integrate. Nonetheless, if you do want to explore the various themes, you can do so at <a href="https://stylishthemes.github.io/Syntax-Themes/pygments">this website</a>. If you want to experiment with it further, you can try out <a href="https://pygments.org/demo">the demo</a>.</p>
+    <p>The research process for this website also unveiled some interesting projects in the Pygments ecosystem. They are listed below:</p>
+    <ul>
+      <li><a href="https://github.com/lewisacidic/nord-pygments">nord-pygments</a></li>
+      <li><a href="https://github.com/sbrisard/nord_pygments">nord_pygments</a></li>
+      <li><a href="https://github.com/NSHipster/SwiftSyntaxHighlighter">SwiftSyntaxHighlighter</a>: A syntax highlighter for Swift code that uses SwiftSyntax to generate Pygments-compatible HTML.</li>
+      <li><a href="https://nshipster.com/swiftsyntax">SwiftSyntax</a></li>
+      <li><a href="https://github.com/kakawait/pygments-darcula">pygments-darcula</a>: Brings the Darcula theme from JetBrains IDEs to Pygments.</li>
+    </ul>
+    <h3 id="rouge" class="section">
+      <a href="#rouge">Rouge</a>
+    </h3>
+    <p>Rouge is the least researched among the group. Its proximity to Ruby did not align with this website&#39;s goals. However, if you want to explore Rouge&#39;s available themes, you can do so <a href="https://spsarolkar.github.io/rouge-theme-preview">here</a>.</p>
+    <h3 id="code-prettify" class="section">
+      <a href="#code-prettify">code-prettify</a>
+    </h3>
+    <p>Google&#39;s involvement lent this project some credibility at first, but it quickly became clear that it is not actively maintained. Additionally, <a href="https://meta.stackexchange.com/questions/353983/goodbye-prettify-hello-highlight-js-swapping-out-our-syntax-highlighter">this discussion</a> about why Meta Stack Overflow switched from Prettify to highlight.js provides details about the differences between the two systems.</p>
+    <h2 id="themes" class="section">
+      <a href="#themes">Themes</a>
+    </h2>
+    <p>Literally dozens of themes were considered for use on this website, but these few stood up best to the criteria which led the search.</p>
+    <h3 id="base16" class="section">
+      <a href="#base16">Base16</a>
+    </h3>
+    <p>The <a href="https://github.com/chriskempson/base16">Base16</a> project drastically simplifies discovery and integration of many popular themes within a diverse set of clients (i.e. JetBrains IDEs, Xcode, etc.). <a href="http://chriskempson.com/projects/base16">This preview tool</a> makes it easy to experiment with all the available themes. When you need to decide on a pleasant theme for your project, start here.</p>
+    <h3 id="dracula" class="section">
+      <a href="#dracula">Dracula</a>
+    </h3>
+    <p>The <a href="https://draculatheme.com">Dracula theme</a> stands out due to its remarkable website which documents how to integrate it into over 100 tools. If only all themes had such great documentation. While it was very tempting, the bright neon colors proved too distracting for this website.</p>
+    <h3 id="nord" class="section">
+      <a href="#nord">Nord</a>
+    </h3>
+    <p>The <a href="https://www.nordtheme.com">Nord theme</a> is elegant and minimalist. It even has a stunning <a href="https://plugins.jetbrains.com/plugin/10321-nord">JetBrains IDE integration</a>. Despite its charm, actual usage proved Nord offers too little differentiation between elements. It is also worth mentioning that <a href="https://twitter.com/arcticicestudio/status/954067233067675650">it iss not actively maintained</a>.</p>
+    <h3 id="one-dark" class="section">
+      <a href="#one-dark">One Dark</a>
+    </h3>
+    <p>Of all the themes investigated for this website, Atom&#39;s One Dark theme came out on top due to its bright color palette, rich integrations, and sibling light theme.</p>
+    <h4 id="references" class="section">
+      <a href="#references">References</a>
+    </h4>
+    <ul>
+      <li><a href="https://plugins.jetbrains.com/plugin/11938-one-dark-theme">One Dark JetBrains IDE Theme</a></li>
+      <li><a href="https://github.com/bojan/xcode-one-dark">xcode-one-dark</a></li>
+      <li><a href="https://github.com/atom/atom/tree/master/packages/one-dark-syntax">one-dark-syntax</a></li>
+    </ul>
+  </div>
+</body>
+</html>

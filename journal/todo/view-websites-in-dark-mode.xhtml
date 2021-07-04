@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>View Websites in Dark Mode</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="view-websites-in-dark-mode" class="title">
+      <a href="#view-websites-in-dark-mode">View Websites in Dark Mode</a>
+    </h1>
+    <p>The first thing you&#39;ll need in order to view websites in dark mode on Safari is <a href="https://cascadea.app">Cascadea</a>. It is a macOS app which dynamically re-renders websites without a built-in dark mode using custom CSS rules. You can discover community-curated custom CSS rules from various sources including GitHub &amp; <a href="https://userstyles.org">Stylish</a>.</p>
+    <h2 id="github" class="section">
+      <a href="#github">GitHub</a>
+    </h2>
+    <p>You can view GitHub in Dark Mode using <a href="https://github.com/StylishThemes/GitHub-Dark">GitHub-Dark</a>. You can even adapt it to work with a GitHub Enterprise distribution if you change the regex in the rules from &quot;github.com&quot; to &quot;github.<em>enterprise</em>.com&quot;. Take caution, though, to use an appropriate version of <code>GitHub-Dark</code> for your GitHub Enterprise version. For instance, the last known good version of <code>GitHub-Dark</code> for GitHub Enterprise 2.20.11 is 2.1.3. If you&#39;re not sure which exact version to use, you can binary search your way through <code>GitHub-Dark</code> releases until you find one that looks <em>mostly</em> right.</p>
+    <p>You can customize the style further with variables:</p>
+    <ul>
+      <li>GitHub syntax theme: One Dark</li>
+      <li>CodeMirror syntax theme: One Dark</li>
+      <li>Background: None</li>
+      <li>Code Tab size: 2</li>
+      <li>Code Font: ui-monospace (to use the system monospace font)</li>
+      <li>Code Wrap: Wrap</li>
+    </ul>
+    <h2 id="google" class="section">
+      <a href="#google">Google</a>
+    </h2>
+    <p><a href="https://userstyles.org/styles/173297/custom-dark-google">custom-dark-google</a></p>
+    <h2 id="wikipedia" class="section">
+      <a href="#wikipedia">Wikipedia</a>
+    </h2>
+    <p><a href="https://github.com/StylishThemes/Wikipedia-Dark">Wikipedia-Dark</a></p>
+  </div>
+</body>
+</html>

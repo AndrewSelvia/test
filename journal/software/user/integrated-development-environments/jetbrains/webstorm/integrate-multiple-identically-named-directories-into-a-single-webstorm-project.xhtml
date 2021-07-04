@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Integrate Multiple Identically-named Directories into a Single WebStorm Project</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="integrate-multiple-identically-named-directories-into-a-single-webstorm-project" class="title">
+      <a href="#integrate-multiple-identically-named-directories-into-a-single-webstorm-project">Integrate Multiple Identically-named Directories into a Single WebStorm Project</a>
+    </h1>
+    <p>If you want to use WebStorm to manage a directory structure like this:</p>
+    <pre><code>/a/project1/
+/a/project2/
+/b/project1/
+/b/project2/
+/c/</code></pre>
+    <p>You might conceive of multiple ways of configuring these directories:</p>
+    <ol class="arabic">
+      <li>Open each in a separate window.</li>
+      <li>Create a single project at the root (i.e. /).</li>
+      <li>Create a single project with individually-selected directories (i.e. /a/* and /b/* but not /c/).</li>
+    </ol>
+    <p>First, you might just open them in different windows. If the directories are mostly independent, this is probably fine. However, if you want to search for files across multiple of these directories, you will have to switch between windows, thereby incurring cognitive friction.</p>
+    <p>Next, you may consider just creating a single project at the root. In the special case where the root contains <em>exclusively</em> the directories you want to integrate, this works well. However, in the directory structure shown above, what should you do if you want to exclude the <code>/c/</code> directory (perhaps because it&#39;s unrelated or large)?</p>
+    <p>That question leads you to the third option. Individually-selecting the directories to include in a single WebStorm project is possible, though it requires some configuration. To achieve this design, you can leverage WebStorm&#39;s support for <a href="https://www.jetbrains.com/help/webstorm/opening-reopening-and-closing-projects.html#ws_opening_multiple_projects">multiple projects</a> &amp; <a href="https://www.jetbrains.com/help/webstorm/configuring-project-structure.html#adding_content_root">multiple content roots</a>.</p>
+    <p>Before diving into the instructions below, take note of the goal: to integrate exactly <code>/a/*</code> and <code>/b/*</code> into a single WebStorm window. By doing so, you will be able to search across all the directories and move files between them with ease. Since both <code>/a/</code> and <code>/b/</code> contain a directory named <code>project1</code> (this also applies to <code>project2</code>), WebStorm is incapable of housing both directories in a single project. You will take care to create multiple projects for housing the identically-named directories separately. Once multiple projects exist, you can add additional directories to each as content roots.</p>
+    <p>Regarding the naming of your multiple projects, most project names will be rooted at the top level as flat strings. However, there is one special case you may want to take advantage of: project names delimited by &quot;.&quot; characters enable WebStorm to group projects by their names&#39; common prefixes. For example, if you use a reverse-DNS-style naming scheme for your projects, WebStorm can treat them like this:</p>
+    <pre><code>com.github.username1.project1
+                    .project2
+          .username2.project
+   .company.github.username.project</code></pre>
+    <p>rather than as flat names (i.e. if you use slashes instead):</p>
+    <pre><code>com/github/username1/project1
+com/github/username1/project2
+com/github/username2/project
+com/company/github/username/project</code></pre>
+    <p>Armed with all of that knowledge, hopefully you can now make the right decision for your use case. Follow these instructions to configure a project as described above:</p>
+    <ol class="arabic">
+      <li>Open WebStorm</li>
+      <li>Chose <strong>Open</strong></li>
+      <li>Choose <code>/a/project1</code></li>
+      <li>Choose <strong>WebStorm &gt; Preferences...</strong> (⌘,)</li>
+      <li>Choose <strong>Directories</strong></li>
+      <li>Choose <strong>Add Content Root</strong></li>
+      <li>Choose <code>/a/project2</code></li>
+      <li>Choose <strong>Open</strong></li>
+      <li>Choose <strong>OK</strong></li>
+      <li>Choose <strong>View &gt; Tool Windows &gt; Project</strong> (⌘1)</li>
+      <li>Choose <code>project1</code></li>
+      <li>Choose <strong>Refactor &gt; Rename...</strong> (⇧F6)</li>
+      <li>New project name: a</li>
+      <li>Choose <strong>OK</strong></li>
+      <li>Choose <strong>File &gt; Attach Project...</strong></li>
+      <li>Choose <code>/b/project1</code></li>
+      <li>Choose <strong>Open</strong></li>
+      <li>Choose <strong>WebStorm &gt; Preferences...</strong> (⌘,)</li>
+      <li>Choose <strong>Directories</strong></li>
+      <li>Choose <code>project1</code></li>
+      <li>Choose <strong>Add Content Root</strong></li>
+      <li>Choose <code>/b/project2</code></li>
+      <li>Choose <strong>Open</strong></li>
+      <li>Choose <strong>OK</strong></li>
+      <li>Choose <strong>View &gt; Tool Windows &gt; Project</strong> (⌘1)</li>
+      <li>Choose <code>project1</code></li>
+      <li>Choose <strong>Refactor &gt; Rename...</strong> (⇧F6)</li>
+      <li>New project name: b</li>
+      <li>Choose <strong>OK</strong></li>
+    </ol>
+  </div>
+</body>
+</html>

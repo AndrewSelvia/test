@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Parameterize a Dockerfile</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="parameterize-a-dockerfile" class="title">
+      <a href="#parameterize-a-dockerfile">Parameterize a Dockerfile</a>
+    </h1>
+    <p>In order to honor the <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">Don&#39;t Repeat Yourself (DRY) principle</a> within a Dockerfile, you should understand the use cases for <code>ARG</code>, <code>ENV</code>, and <code>env_file</code>s. Here are some high-level principles to follow:</p>
+    <ul>
+      <li><code>ARG</code>: build-time parameter</li>
+      <li><code>ENV</code>: run-time parameter</li>
+      <li><code>env_file</code>: a set of run-time parameters not hard-coded in the Dockerfile</li>
+    </ul>
+    <h2 id="build-time-parameters" class="section">
+      <a href="#build-time-parameters">Build-time Parameters</a>
+    </h2>
+    <p>If you need to parameterize your build (i.e. supplying the base image as a parameter, using different compiler flags in development &amp; production, etc.), you should leverage <code>ARG</code>s. In your Dockerfile, you can declare an <code>ARG</code> (with an optional default value); then, if you need to access its value at runtime, you can store it in an <code>ENV</code>. For example:</p>
+    <pre class="keep-together pdf epub"><code class="dockerfile">ARG arg=default
+ENV env=$arg</code></pre>
+    <p>When you build your image, you can supply values for the declared <code>ARG</code>s via the <code>--build-arg</code> flag:</p>
+    <pre class="keep-together pdf epub"><code class="shell">docker build --build-arg arg=custom .</code></pre>
+    <h2 id="run-time-parameters" class="section">
+      <a href="#run-time-parameters">Run-time Parameters</a>
+    </h2>
+    <p>If you just need to parameterize your image at runtime, you can leverage <code>ENV</code> or an <code>env_file</code> if you have many parameters to inject.</p>
+    <h2 id="references" class="section">
+      <a href="#references">References</a>
+    </h2>
+    <p>For more detailed explanation of these techniques, refer to these articles:</p>
+    <ul>
+      <li><a href="https://vsupalov.com/docker-build-time-env-values/"><em>Setting Default Docker Environment Variables During Image Build</em></a>: A short introduction to using <code>ARG</code> for build parameterization</li>
+      <li><a href="https://vsupalov.com/docker-arg-vs-env/"><em>Docker ARG vs. ENV</em></a>: A detailed comparison of <code>ARG</code> &amp; <code>ENV</code> mechanics</li>
+      <li><a href="https://vsupalov.com/docker-arg-env-variable-guide/"><em>Docker ARG, ENV and .env - A Complete Guide</em></a>: A truly <em>complete</em> guide to the use cases for each type of parameterization</li>
+      <li>
+        <p><a href="https://vsupalov.com/docker-build-pass-environment-variables/"><em>Pass Docker Environment Variables During the Image Build</em></a>: Additional documentation about build parameterization strategies, including this important warning:</p>
+        <blockquote>Remember to be cautious when considering ARG and ENV for secrets, as they are <a href="https://vsupalov.com/build-docker-image-clone-private-repo-ssh-key/">not safe</a>.</blockquote>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Settings</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="settings" class="title">
+      <a href="#settings">Settings</a>
+    </h1>
+    <p>The first thing you should consider is how to manage your settings. If you&#39;ll be using multiple JetBrains products, working across various computers, or want to share your settings with your entire team, you should reference the JetBrains documentation on how to <a href="https://www.jetbrains.com/help/webstorm/sharing-your-ide-settings.html"><em>Share IDE Settings</em></a>. In particular, the use of a <a href="https://www.jetbrains.com/help/webstorm/sharing-your-ide-settings.html#settings-repository">settings repository</a> can dramatically simplify synchronizing settings across various JetBrains products.</p>
+    <p>Here are some settings you may consider using within your JetBrains IDEs:</p>
+    <ul>
+      <li>
+        <p>Close button position: This setting defines where the close button is rendered on a tab. It defaults to the right side. This stands in opposition to the tab close button location throughout the rest of macOS. In order to change it to be more consistent, follow these steps:</p>
+        <ol class="arabic">
+          <li>Choose <strong>App &gt; Preferences...</strong> (⌘,)</li>
+          <li>Disclose <strong>Editor &gt; General</strong></li>
+          <li>Choose <strong>Editor Tabs</strong></li>
+          <li>Set <strong>Appearance &gt; Close button position</strong> to <strong>Left</strong></li>
+          <li>Choose <strong>OK</strong></li>
+        </ol>
+      </li>
+      <li>
+        <p>Use custom font: Perhaps you already knew that you can choose a custom font for use within JetBrains IDEs. However, did you know that you can set it to be the standard system font on macOS? This is convenient because as Apple changes the font used throughout the system, the IDE can always look like it fits in. Follow these steps to enable it:</p>
+        <ol class="arabic">
+          <li>Choose <strong>App &gt; Preferences...</strong> (⌘,)</li>
+          <li>Disclose <strong>Appearance &amp; Behavior &gt; Appearance</strong></li>
+          <li>Set <strong>Use custom font</strong> to <strong>.SF NS Text</strong></li>
+          <li>Choose <strong>OK</strong></li>
+        </ol>
+      </li>
+      <li>
+        <p>Editor font: Similarly to the general IDE font, you can set the editor font to the system monospace font like this:</p>
+        <ol class="arabic">
+          <li>Choose <strong>App &gt; Preferences...</strong> (⌘,)</li>
+          <li>Disclose <strong>Editor &gt; Font</strong></li>
+          <li>Set <strong>Font</strong> to <strong>.SF NS Mono</strong></li>
+          <li>Choose <strong>OK</strong></li>
+        </ol>
+      </li>
+      <li>
+        <p>Markdown preview CSS rules: You can slightly modify <a href="https://www.jetbrains.com/help/webstorm/markdown.html#css">the Markdown preview style</a>, though you should not get too greedy. Ultimately, you don&#39;t control the Markdown-to-HTML conversion, so you&#39;re not able to do things like add support for custom code syntax highlighting. The preview <strong>cannot</strong> fully emulate your production style. However, you can at least change a few basic things like the fonts.</p>
+        <ol class="arabic">
+          <li>
+            <p>Choose <strong>App &gt; Preferences...</strong> (⌘,)</p>
+          </li>
+          <li>
+            <p>Disclose <strong>Languages &amp; Frameworks &gt; Markdown</strong></p>
+          </li>
+          <li>
+            <p>Set <strong>Custom CSS &gt; Add CSS rules</strong> to:</p>
+            <pre class="keep-together pdf epub"><code class="css">body {
+    font-family: SF Hello;
+}
+
+code {
+    font-family: SF Mono;
+}</code></pre>
+          </li>
+          <li>
+            <p>Choose <strong>OK</strong></p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>Copyright: If you need to add copyright declarations to all your source files, you can use the Copyright plugin as described in <a href="https://www.jetbrains.com/help/webstorm/copyright.html">its documentation</a>.</p>
+      </li>
+      <li>
+        <p>Dictionary: If you want to configure a dictionary so the editor doesn&#39;t show spelling errors, refer to the documentation on how to set up a <a href="https://www.jetbrains.com/help/idea/spellchecking.html#configure-the-dictionaries-to-use">dictionary</a>.</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

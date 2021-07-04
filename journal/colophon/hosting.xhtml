@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Hosting</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="hosting" class="title">
+      <a href="#hosting">Hosting</a>
+    </h1>
+    <p>The priorities and decisions which have led to the current hosting strategy for this website are recorded here.</p>
+    <h2 id="priorities" class="section">
+      <a href="#priorities">Priorities</a>
+    </h2>
+    <ul>
+      <li>Articles must be written in Markdown for ease of writing &amp; reading as plain text while also enabling distribution via the web (after transformation to HTML).</li>
+      <li>Articles must be contained within a hierarchy of directories branching from a root directory which is managed by git for source control.</li>
+      <li>The repo&#39;s organizational structure should not be determined by an external system (i.e. Jekyll enforces strict naming and organization of directories).</li>
+      <li>The raw data (articles) should be separated from the manufacturing process (Markdown to HTML) and service which publishes them so that alternate data could easily be fed into the publication pipeline. </li>
+      <li>Commits to the main data branch should trigger automatic processes which manufacture all pages into HTML and publish them for distribution by the service.</li>
+      <li>Costs should be minimized, though need not be 0.</li>
+      <li>The publication pipeline runtime should be minimized so that new articles are visible in production within just a couple minutes.</li>
+      <li>The site must use a custom domain.</li>
+      <li>The site must be distributed over https.</li>
+      <li>All data &amp; code artifacts must always remain open-source so a global community can leverage, improve, and adapt them over time.</li>
+    </ul>
+    <h2 id="decisions" class="section">
+      <a href="#decisions">Decisions</a>
+    </h2>
+    <p>The initial rollout of this website was influenced by the assumption that it would leverage server-side logic in the future. If you refer to the history of this document, you can read about the initial strategy that involved hosting Markdown files on GitHub, transforming them to HTML files, uploading those to Google Cloud Storage, then fetching them dynamically from a service running on Google Kubernetes Engine. The initial price was $5 per month. Unfortunately, the actual cost wound up being $50 per month due to my own ignorance most likely.</p>
+    <p>In addition to the surprising costs, I also had to face the reality that I don&#39;t have time to develop server-side logic for this project. Furthermore, it became clear that the service was doing nothing but forward static files upon request. The sensible decision became obvious: just host static content. While AWS or GCP could perform that task, the new direction lent another opportunity to investigate GitHub Pages.</p>
+    <p>My previous experiences with GitHub Pages had all left me feeling unfulfilled. I was certainly not interested in jumping back into Jekyll due to its enforced structure and dependence on Ruby. Luckily, the initial round of development on this website had already proven the concept of using Laika to transform Markdown files to HTML files ready for serving. Aided by <a href="https://github.community/t/non-jekyll-website/126216">this discussion</a>, I was able to work out how to use GitHub Pages like a simple file server. In the end, I came to peace with the exchange of control over the website&#39;s deployment and hosting for the unbeatable free price.</p>
+  </div>
+</body>
+</html>

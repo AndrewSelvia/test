@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Favicons</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="favicons" class="title">
+      <a href="#favicons">Favicons</a>
+    </h1>
+    <p><a href="https://www.w3docs.com/snippets/html/how-to-add-an-image-in-the-title-bar.html">Favicons</a> are icons provided by webpages for display within browser tabs. They enable quick visual identification.</p>
+    <h2 id="generate-assets" class="section">
+      <a href="#generate-assets">Generate Assets</a>
+    </h2>
+    <p>Unfortunately, there is <a href="https://stackoverflow.com/questions/48956465/favicon-standard-2020-svg-ico-png-and-dimensions">no universal standard for favicon sizing or routing</a>. Luckily, <a href="https://realfavicongenerator.net">RealFaviconGenerator</a> automates the entire process and explains the rationale behind all the assets it produces. Once your actual icon is designed (as a 260x260 PNG or SVG file), simply upload it and follow the steps to create a favicon for all the most common use cases including:</p>
+    <ul>
+      <li>A desktop browser tab favicon</li>
+      <li>A mobile browser tab favicon</li>
+      <li>An iOS web app icon</li>
+    </ul>
+    <h2 id="verification" class="section">
+      <a href="#verification">Verification</a>
+    </h2>
+    <p>The best way to verify your webpage&#39;s favicon looks right is to view it on all the platforms you care about. While verifying your favicon on Safari, you may need to <a href="https://www.groovypost.com/howto/clear-the-safari-cache-on-your-iphone/">clear the cache</a>.</p>
+    <h2 id="apple-platform-considerations" class="section">
+      <a href="#apple-platform-considerations">Apple Platform Considerations</a>
+    </h2>
+    <p>Safari supports favicons as documented in <a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html#//apple_ref/doc/uid/TP40002051-CH18-SW1"><em>Creating Pinned Tab Icons</em></a>. Furthermore, iOS has rich, built-in support for web apps. To leverage this functionality, refer to <a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html"><em>Configuring Web Applications</em></a>.</p>
+    <p>Additionally, you may find the following links generally informative:</p>
+    <ul>
+      <li><a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/">Apple Human Interface Guidelines: App Icon</a></li>
+      <li><a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html#//apple_ref/doc/uid/TP40008193-SW3"><em>Apple-specific Meta Tag Keys</em></a></li>
+    </ul>
+    <h2 id="dark-mode-variant" class="section">
+      <a href="#dark-mode-variant">Dark Mode Variant</a>
+    </h2>
+    <p>While the web has gained some support for dark mode interfaces, favicons remain slightly out of reach at the time of this writing. Specifically, Safari has only partial support as clarified by <a href="https://caniuse.com/#feat=link-icon-svg">caniuse.com</a>:</p>
+    <blockquote>Safari 9+ has support for &quot;pinned tab&quot; SVG icons, but this requires an unofficial <code>rel=&quot;mask-icon&quot;</code> to be set and only works for all-black icons on Pinned Tabs.</blockquote>
+    <p>The following articles corroborate this fact:</p>
+    <ul>
+      <li>
+        <p><a href="https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df"><em>Are you using SVG favicons yet? A guide for modern browsers.
+        </em></a></p>
+        <blockquote>This method won’t work with the mask-icon since the colour is in the attribute but Safari adds a white background if there isn’t enough contrast.</blockquote>
+      </li>
+      <li>
+        <p><a href="https://css-tricks.com/dark-mode-favicons/"><em>Dark Mode Favicons</em></a></p>
+        <blockquote>You specify the color, so there is no opportunity there for a dark mode situation.</blockquote>
+      </li>
+      <li><a href="https://catalin.red/svg-favicon-light-dark-theme/"><em>Light and dark themed SVG favicon using the CSS prefers-color-scheme media feature</em></a></li>
+      <li><a href="https://stackoverflow.com/questions/55170708/detect-if-the-browser-is-using-dark-mode-and-use-a-different-favicon">StackOverflow: Detect if the browser is using dark mode and use a different favicon</a></li>
+    </ul>
+    <p>For the time being, you may want to consider applying a shade of gray to the mask-icon used by Safari so that it appears reasonably in either Light or Dark Mode, especially since some users may switch throughout the day and the mask-icon is not refreshed when the mode switches. For instance, apple.com uses <code>#888888</code>.</p>
+  </div>
+</body>
+</html>

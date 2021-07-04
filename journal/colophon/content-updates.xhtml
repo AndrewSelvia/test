@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
+  <meta charset="utf-8" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/assets/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+  <!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+  <!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+  <!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888" />
+  <meta name="apple-mobile-web-app-title" content="Journal" />
+  <meta name="application-name" content="Journal" />
+  <!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Content Updates</title>
+</head>
+<body>
+  <div class="navbar">
+    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+      <title>Show sidebar</title>
+      <use href="/assets/images/icons/Sidebar.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+      <title>Open root</title>
+      <use href="/assets/images/icons/Journal.svg#icon"/>
+    </svg>
+    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+      <title>Edit on GitHub</title>
+      <use href="/assets/images/icons/GitHub.svg#icon"/>
+    </svg>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  </div>
+  <div class="content" id="main">
+    <h1 id="content-updates" class="title">
+      <a href="#content-updates">Content Updates</a>
+    </h1>
+    <p>Two primary goals of this website&#39;s architecture are for content updates to occur <strong>automatically</strong> and <strong>quickly</strong>. With no manual intervention except a <code>git push</code>, updates to articles should be viewable within a minute or two. The strategies described below elaborate on the approaches taken to achieve these goals.</p>
+    <h2 id="pull-from-github-at-runtime" class="section">
+      <a href="#pull-from-github-at-runtime">Pull from GitHub at Runtime</a>
+    </h2>
+    <p>The initial architecture for this website expected the service to pull the contents of <a href="https://github.com/andrew-selvia/journal"><code>journal</code></a> from GitHub at runtime. Conceptually, this would have ensured that the service always showed the latest contents. During development, it became clear that all of the raw Markdown files must be present when they are transformed to HTML. If single files were transformed upon request, the navigation tree Laika generates would be inaccurate.</p>
+    <p>In order for the <em>pull</em> model to work given this constraint, an implementation was created which retrieved the entire <code>journal</code> repo from GitHub dynamically upon request of any file (with the eventual goal of adding a caching layer). Early failed attempts at this implementation used GitHub APIs such as the <a href="https://docs.github.com/en/rest/reference/repos#get-repository-content"><em>Get Repository Content</em></a> &amp; <a href="https://developer.github.com/v3/git/trees/#get-a-tree"><em>Get a Tree</em></a> APIs; unfortunately, those simply allow walking the hierarchy, not retrieving the files&#39; <em>contents</em>. Eventually, the discovery of the <a href="https://developer.github.com/v3/repos/contents/#download-a-repository-archive"><em>Download a Repository Archive</em></a> API enabled retrieving the contents themselves in .zip format. The next challenge then became extracting the .zip contents within the Scala service; eventually, <a href="https://www.baeldung.com/java-compress-and-uncompress#unzip">this code helped to unzip the contents</a>. Unfortunately, in the end, it eventually became clear that the archives retrieved from that API took on the order of 15 minutes to become available following a commit to the repo&#39;s main branch. This delay was deemed unacceptable and the <em>pull</em> model was abandoned.</p>
+    <h2 id="push-to-google-cloud-storage-via-a-github-action" class="section">
+      <a href="#push-to-google-cloud-storage-via-a-github-action">Push to Google Cloud Storage via a GitHub Action</a>
+    </h2>
+    <p>After the <em>pull</em> model proved unfeasible, the <em>push</em> model was explored. Eventually, a successful 3-part architecture solidified:</p>
+    <ol class="arabic">
+      <li>A commit to the main branch of <code>journal</code> triggers a GitHub Action which transforms the raw Markdown files to HTML.</li>
+      <li>The GitHub Action uploads all the files to Google Cloud Storage (GCS) as described in <a href="/software/developer/github/actions/upload-files-to-google-cloud-storage.md"><em>Upload Files to Google Cloud Storage</em></a>.</li>
+      <li>The service dynamically fetches the requested file from GCS.</li>
+    </ol>
+  </div>
+</body>
+</html>
