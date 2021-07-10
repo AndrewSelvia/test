@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
   <meta charset="utf-8" />
@@ -29,26 +28,366 @@
   <title>Developer</title>
 </head>
 <body>
-  <div class="navbar">
-    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
-      <title>Show sidebar</title>
-      <use href="/assets/images/icons/Sidebar.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
-      <title>Open root</title>
-      <use href="/assets/images/icons/Journal.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
-      <title>Edit on GitHub</title>
-      <use href="/assets/images/icons/GitHub.svg#icon"/>
-    </svg>
-  </div>
-  <div id="mySidebar" class="sidebar">
-  </div>
   <div class="content" id="main">
+    <div class="row">
+      <svg:svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+        <svg:defs>
+          <svg:linearGradient id="header-shape-gradient" gradientTransform="rotate(90)">
+            <svg:stop offset="0%" stop-color="var(--color-red)"/>
+            <svg:stop offset="20%" stop-color="var(--color-orange)"/>
+            <svg:stop offset="40%" stop-color="var(--color-yellow)"/>
+            <svg:stop offset="60%" stop-color="var(--color-green)"/>
+            <svg:stop offset="80%" stop-color="var(--color-blue)"/>
+            <svg:stop offset="100%" stop-color="var(--color-indigo)"/>
+          </svg:linearGradient>
+        </svg:defs>
+        <svg:title>Open root</svg:title>
+        <svg:use href="/assets/images/icons/Journal.svg#icon"/>
+      </svg:svg>
+      <ul class="breadcrumb nav-list">
+        <li class="level1 breadcrumb"><a href="../../index.xhtml">Journal</a></li>
+        <li class="level1 breadcrumb"><a href="../index.xhtml">Software</a></li>
+        <li id="parent" class="level1 breadcrumb active"><a href="#">Developer</a></li>
+      </ul>
+    </div>
     <h1 id="developer" class="title">
       <a href="#developer">Developer</a>
     </h1>
+    <ul id="nav-list-children">
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Akka</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="akka/index.xhtml">Akka</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Alpakka</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="alpakka/index.xhtml">Alpakka</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>AWS</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="aws/index.xhtml">AWS</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Browsers</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="browsers/index.xhtml">Browsers</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Commands</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="commands/index.xhtml">Commands</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>CSS</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="css/index.xhtml">CSS</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Docker</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="docker/index.xhtml">Docker</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Git</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="git/index.xhtml">Git</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>GitHub</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="github/index.xhtml">GitHub</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Google Cloud Platform (GCP)</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="google-cloud-platform/index.xhtml">Google Cloud Platform (GCP)</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Integrated Development Environments (IDEs)</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="integrated-development-environments/index.xhtml">Integrated Development Environments (IDEs)</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Jupyter</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="jupyter/index.xhtml">Jupyter</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Kubernetes</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="kubernetes/index.xhtml">Kubernetes</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>LaTeX</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="latex/index.xhtml">LaTeX</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Machine Learning</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="machine-learning/index.xhtml">Machine Learning</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>matplotlib</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="matplotlib/index.xhtml">matplotlib</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Namecheap</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="namecheap/index.xhtml">Namecheap</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Operating Systems</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="operating-systems/index.xhtml">Operating Systems</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Play</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="play/index.xhtml">Play</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Play JSON</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="play-json/index.xhtml">Play JSON</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Python</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="python/index.xhtml">Python</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>SBT</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="sbt/index.xhtml">SBT</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Scala</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="scala/index.xhtml">Scala</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>SLF4J</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="slf4j/index.xhtml">SLF4J</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>STTP</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="sttp/index.xhtml">STTP</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Swift</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="swift/index.xhtml">Swift</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>SwiftUI</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="swiftui/index.xhtml">SwiftUI</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>TensorFlow</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="tensorflow/index.xhtml">TensorFlow</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>UIKit</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="uikit/index.xhtml">UIKit</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>Vapor</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="vapor/index.xhtml">Vapor</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="folder" width="19px" height="15px">
+            <svg:title>YAML</svg:title>
+            <svg:use href="/assets/images/icons/folder.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="yaml/index.xhtml">YAML</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="doc" width="15px" height="19px">
+            <svg:title>Favicons</svg:title>
+            <svg:use href="/assets/images/icons/doc.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="favicons.xhtml">Favicons</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="doc" width="15px" height="19px">
+            <svg:title>Google Cloud Storage</svg:title>
+            <svg:use href="/assets/images/icons/doc.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="google-cloud-storage.xhtml">Google Cloud Storage</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="doc" width="15px" height="19px">
+            <svg:title>Return a File Stored in Google Cloud Storage via a Play Application</svg:title>
+            <svg:use href="/assets/images/icons/doc.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="return-a-file-stored-in-google-cloud-storage-via-a-play-application.xhtml">Return a File Stored in Google Cloud Storage via a Play Application</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="doc" width="15px" height="19px">
+            <svg:title>Serve Website on Google Kubernetes Engine over HTTPS</svg:title>
+            <svg:use href="/assets/images/icons/doc.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="serve-website-on-google-kubernetes-engine-over-https.xhtml">Serve Website on Google Kubernetes Engine over HTTPS</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="doc" width="15px" height="19px">
+            <svg:title>Store Secrets</svg:title>
+            <svg:use href="/assets/images/icons/doc.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="store-secrets.xhtml">Store Secrets</a>
+        </div>
+      </li>
+      <li>
+        <div class="directory-contents-list-item-div">
+          <svg:svg class="doc" width="15px" height="19px">
+            <svg:title>Upload Files to Google Cloud Storage via a GitHub Action</svg:title>
+            <svg:use href="/assets/images/icons/doc.fill.svg#Shape"/>
+          </svg:svg>
+          <a href="upload-files-to-google-cloud-storage-via-a-github-action.xhtml">Upload Files to Google Cloud Storage via a GitHub Action</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </body>
 </html>

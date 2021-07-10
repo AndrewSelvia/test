@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
   <meta charset="utf-8" />
@@ -29,28 +28,36 @@
   <title>Build a Scala App</title>
 </head>
 <body>
-  <div class="navbar">
-    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
-      <title>Show sidebar</title>
-      <use href="/assets/images/icons/Sidebar.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
-      <title>Open root</title>
-      <use href="/assets/images/icons/Journal.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
-      <title>Edit on GitHub</title>
-      <use href="/assets/images/icons/GitHub.svg#icon"/>
-    </svg>
-  </div>
-  <div id="mySidebar" class="sidebar">
-  </div>
   <div class="content" id="main">
+    <div class="row">
+      <svg:svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+        <svg:defs>
+          <svg:linearGradient id="header-shape-gradient" gradientTransform="rotate(90)">
+            <svg:stop offset="0%" stop-color="var(--color-red)"/>
+            <svg:stop offset="20%" stop-color="var(--color-orange)"/>
+            <svg:stop offset="40%" stop-color="var(--color-yellow)"/>
+            <svg:stop offset="60%" stop-color="var(--color-green)"/>
+            <svg:stop offset="80%" stop-color="var(--color-blue)"/>
+            <svg:stop offset="100%" stop-color="var(--color-indigo)"/>
+          </svg:linearGradient>
+        </svg:defs>
+        <svg:title>Open root</svg:title>
+        <svg:use href="/assets/images/icons/Journal.svg#icon"/>
+      </svg:svg>
+      <ul class="breadcrumb nav-list">
+        <li class="level1 breadcrumb"><a href="../../../../index.xhtml">Journal</a></li>
+        <li class="level1 breadcrumb"><a href="../../../index.xhtml">Software</a></li>
+        <li class="level1 breadcrumb"><a href="../../index.xhtml">Developer</a></li>
+        <li class="level1 breadcrumb"><a href="../index.xhtml">GitHub</a></li>
+        <li id="parent" class="level1 breadcrumb"><a href="index.xhtml">Actions</a></li>
+      </ul>
+    </div>
     <h1 id="build-a-scala-app" class="title">
       <a href="#build-a-scala-app">Build a Scala App</a>
     </h1>
     <p>If you&#39;re using SBT, you may want to begin by reading through its <a href="https://www.scala-sbt.org/1.x/docs/GitHub-Actions-with-sbt.html">documentation of how to integrate with GitHub Actions</a>. For additional context, read <a href="https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project"><em>Continuous Integration with GitHub Actions for a Scala Project</em></a> which details how to configure <a href="https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#unit-tests">unit tests</a>, <a href="https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#code-coverage">code coverage</a>, <a href="https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#code-formatting">code formatting</a>, and <a href="https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#github-actions">GitHub Actions</a>.</p>
     <p>Separately, you may also find the <a href="https://github.com/marketplace/actions/sbt-action">sbt-action</a> valuable in certain circumstances.</p>
+    
   </div>
 </body>
 </html>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
   <meta charset="utf-8" />
@@ -29,23 +28,27 @@
   <title>Hosting</title>
 </head>
 <body>
-  <div class="navbar">
-    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
-      <title>Show sidebar</title>
-      <use href="/assets/images/icons/Sidebar.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
-      <title>Open root</title>
-      <use href="/assets/images/icons/Journal.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
-      <title>Edit on GitHub</title>
-      <use href="/assets/images/icons/GitHub.svg#icon"/>
-    </svg>
-  </div>
-  <div id="mySidebar" class="sidebar">
-  </div>
   <div class="content" id="main">
+    <div class="row">
+      <svg:svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+        <svg:defs>
+          <svg:linearGradient id="header-shape-gradient" gradientTransform="rotate(90)">
+            <svg:stop offset="0%" stop-color="var(--color-red)"/>
+            <svg:stop offset="20%" stop-color="var(--color-orange)"/>
+            <svg:stop offset="40%" stop-color="var(--color-yellow)"/>
+            <svg:stop offset="60%" stop-color="var(--color-green)"/>
+            <svg:stop offset="80%" stop-color="var(--color-blue)"/>
+            <svg:stop offset="100%" stop-color="var(--color-indigo)"/>
+          </svg:linearGradient>
+        </svg:defs>
+        <svg:title>Open root</svg:title>
+        <svg:use href="/assets/images/icons/Journal.svg#icon"/>
+      </svg:svg>
+      <ul class="breadcrumb nav-list">
+        <li class="level1 breadcrumb"><a href="../index.xhtml">Journal</a></li>
+        <li id="parent" class="level1 breadcrumb"><a href="index.xhtml">Colophon</a></li>
+      </ul>
+    </div>
     <h1 id="hosting" class="title">
       <a href="#hosting">Hosting</a>
     </h1>
@@ -71,6 +74,7 @@
     <p>The initial rollout of this website was influenced by the assumption that it would leverage server-side logic in the future. If you refer to the history of this document, you can read about the initial strategy that involved hosting Markdown files on GitHub, transforming them to HTML files, uploading those to Google Cloud Storage, then fetching them dynamically from a service running on Google Kubernetes Engine. The initial price was $5 per month. Unfortunately, the actual cost wound up being $50 per month due to my own ignorance most likely.</p>
     <p>In addition to the surprising costs, I also had to face the reality that I don&#39;t have time to develop server-side logic for this project. Furthermore, it became clear that the service was doing nothing but forward static files upon request. The sensible decision became obvious: just host static content. While AWS or GCP could perform that task, the new direction lent another opportunity to investigate GitHub Pages.</p>
     <p>My previous experiences with GitHub Pages had all left me feeling unfulfilled. I was certainly not interested in jumping back into Jekyll due to its enforced structure and dependence on Ruby. Luckily, the initial round of development on this website had already proven the concept of using Laika to transform Markdown files to HTML files ready for serving. Aided by <a href="https://github.community/t/non-jekyll-website/126216">this discussion</a>, I was able to work out how to use GitHub Pages like a simple file server. In the end, I came to peace with the exchange of control over the website&#39;s deployment and hosting for the unbeatable free price.</p>
+    
   </div>
 </body>
 </html>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
   <meta charset="utf-8" />
@@ -29,27 +28,33 @@
   <title>Upload Files to Google Cloud Storage via a GitHub Action</title>
 </head>
 <body>
-  <div class="navbar">
-    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
-      <title>Show sidebar</title>
-      <use href="/assets/images/icons/Sidebar.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
-      <title>Open root</title>
-      <use href="/assets/images/icons/Journal.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
-      <title>Edit on GitHub</title>
-      <use href="/assets/images/icons/GitHub.svg#icon"/>
-    </svg>
-  </div>
-  <div id="mySidebar" class="sidebar">
-  </div>
   <div class="content" id="main">
+    <div class="row">
+      <svg:svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+        <svg:defs>
+          <svg:linearGradient id="header-shape-gradient" gradientTransform="rotate(90)">
+            <svg:stop offset="0%" stop-color="var(--color-red)"/>
+            <svg:stop offset="20%" stop-color="var(--color-orange)"/>
+            <svg:stop offset="40%" stop-color="var(--color-yellow)"/>
+            <svg:stop offset="60%" stop-color="var(--color-green)"/>
+            <svg:stop offset="80%" stop-color="var(--color-blue)"/>
+            <svg:stop offset="100%" stop-color="var(--color-indigo)"/>
+          </svg:linearGradient>
+        </svg:defs>
+        <svg:title>Open root</svg:title>
+        <svg:use href="/assets/images/icons/Journal.svg#icon"/>
+      </svg:svg>
+      <ul class="breadcrumb nav-list">
+        <li class="level1 breadcrumb"><a href="../../index.xhtml">Journal</a></li>
+        <li class="level1 breadcrumb"><a href="../index.xhtml">Software</a></li>
+        <li id="parent" class="level1 breadcrumb"><a href="index.xhtml">Developer</a></li>
+      </ul>
+    </div>
     <h1 id="upload-files-to-google-cloud-storage-via-a-github-action" class="title">
       <a href="#upload-files-to-google-cloud-storage-via-a-github-action">Upload Files to Google Cloud Storage via a GitHub Action</a>
     </h1>
     <p>If your webpage sources are hosted on GitHub, stored on Google Cloud Storage (GCS), and distributed via Google Cloud Platform (GCP), your infrastructure lends itself to automation. If you have been manually updating GCS with new sources, you can save yourself time and minimize latency with <a href="https://github.com/features/actions">GitHub Actions</a>. You can think of actions as scripts that are triggered via git hooks. For instance, the infrastructure described above could be automated by creating an action which maps raw source files (i.e. a directory of Markdown files) to another format (i.e. a directory of HTML files) then uploads them to GCS via <code>gsutil</code>. A comprehensive tutorial for creating such an action is detailed in <a href="https://sha.ws/automatic-upload-to-google-cloud-storage-with-github-actions.html"><em>Automatic Upload to Google Cloud Storage with GitHub Actions</em></a>.</p>
+    
   </div>
 </body>
 </html>

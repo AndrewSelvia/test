@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
   <meta charset="utf-8" />
@@ -29,23 +28,30 @@
   <title>Swift Cluster Membership</title>
 </head>
 <body>
-  <div class="navbar">
-    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
-      <title>Show sidebar</title>
-      <use href="/assets/images/icons/Sidebar.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
-      <title>Open root</title>
-      <use href="/assets/images/icons/Journal.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
-      <title>Edit on GitHub</title>
-      <use href="/assets/images/icons/GitHub.svg#icon"/>
-    </svg>
-  </div>
-  <div id="mySidebar" class="sidebar">
-  </div>
   <div class="content" id="main">
+    <div class="row">
+      <svg:svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+        <svg:defs>
+          <svg:linearGradient id="header-shape-gradient" gradientTransform="rotate(90)">
+            <svg:stop offset="0%" stop-color="var(--color-red)"/>
+            <svg:stop offset="20%" stop-color="var(--color-orange)"/>
+            <svg:stop offset="40%" stop-color="var(--color-yellow)"/>
+            <svg:stop offset="60%" stop-color="var(--color-green)"/>
+            <svg:stop offset="80%" stop-color="var(--color-blue)"/>
+            <svg:stop offset="100%" stop-color="var(--color-indigo)"/>
+          </svg:linearGradient>
+        </svg:defs>
+        <svg:title>Open root</svg:title>
+        <svg:use href="/assets/images/icons/Journal.svg#icon"/>
+      </svg:svg>
+      <ul class="breadcrumb nav-list">
+        <li class="level1 breadcrumb"><a href="../../../../index.xhtml">Journal</a></li>
+        <li class="level1 breadcrumb"><a href="../../../index.xhtml">Software</a></li>
+        <li class="level1 breadcrumb"><a href="../../index.xhtml">Developer</a></li>
+        <li class="level1 breadcrumb"><a href="../index.xhtml">Swift</a></li>
+        <li id="parent" class="level1 breadcrumb"><a href="index.xhtml">Swift on Server</a></li>
+      </ul>
+    </div>
     <h1 id="swift-cluster-membership" class="title">
       <a href="#swift-cluster-membership">Swift Cluster Membership</a>
     </h1>
@@ -55,6 +61,7 @@
       <p>Cluster membership protocols are a crucial building block for distributed systems, such as computation intensive clusters, schedulers, databases, key-value stores and more.</p>
     </blockquote>
     <p>This is a thrilling development for the Swift on Server community.</p>
+    
   </div>
 </body>
 </html>

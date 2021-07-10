@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" media="all" />
   <meta charset="utf-8" />
@@ -29,28 +28,33 @@
   <title>Honor Dynamic Type Settings on a Website</title>
 </head>
 <body>
-  <div class="navbar">
-    <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
-      <title>Show sidebar</title>
-      <use href="/assets/images/icons/Sidebar.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
-      <title>Open root</title>
-      <use href="/assets/images/icons/Journal.svg#icon"/>
-    </svg>
-    <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
-      <title>Edit on GitHub</title>
-      <use href="/assets/images/icons/GitHub.svg#icon"/>
-    </svg>
-  </div>
-  <div id="mySidebar" class="sidebar">
-  </div>
   <div class="content" id="main">
+    <div class="row">
+      <svg:svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+        <svg:defs>
+          <svg:linearGradient id="header-shape-gradient" gradientTransform="rotate(90)">
+            <svg:stop offset="0%" stop-color="var(--color-red)"/>
+            <svg:stop offset="20%" stop-color="var(--color-orange)"/>
+            <svg:stop offset="40%" stop-color="var(--color-yellow)"/>
+            <svg:stop offset="60%" stop-color="var(--color-green)"/>
+            <svg:stop offset="80%" stop-color="var(--color-blue)"/>
+            <svg:stop offset="100%" stop-color="var(--color-indigo)"/>
+          </svg:linearGradient>
+        </svg:defs>
+        <svg:title>Open root</svg:title>
+        <svg:use href="/assets/images/icons/Journal.svg#icon"/>
+      </svg:svg>
+      <ul class="breadcrumb nav-list">
+        <li class="level1 breadcrumb"><a href="../index.xhtml">Journal</a></li>
+        <li id="parent" class="level1 breadcrumb"><a href="index.xhtml">TODO</a></li>
+      </ul>
+    </div>
     <h1 id="honor-dynamic-type-settings-on-a-website" class="title">
       <a href="#honor-dynamic-type-settings-on-a-website">Honor Dynamic Type Settings on a Website</a>
     </h1>
     <p>iOS has a feature named <a href="https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically">Dynamic Type</a> which developers can leverage to render text at user-specified sizes within their apps. To learn more about the feature, refer to the <a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography"><em>Typography</em></a> section of the Apple Human Interface Guidelines. While Dynamic Type primarily benefits iOS apps, websites can also take advantage of this feature to offer readers a seamless experience that suits their visual needs. To see Dynamic Type working on a website, refer to <a href="https://ia11y.github.io/Coding-Patterns/iOS/text-resizing/ios-system-fonts.html">this demo</a>. When you&#39;re ready to begin integrating it into your website, refer to <a href="https://ind.ie/labs/blog/dynamic-type-support"><em>Adding iOS Dynamic Type Support to Better</em></a> and <a href="https://useyourloaf.com/blog/using-dynamic-type-with-web-views"><em>Using Dynamic Type with Web Views</em></a>.</p>
     <p>It is worth mentioning that Dynamic Type may not provide the right distribution of font categories for your website&#39;s needs. For instance, this website frequently leverages multiple nested layers of headings. Dynamic Type doesn&#39;t have a great solution for that situation unfortunately. While you could at least leverage the <em>body</em> style to correctly-render the main content, remember that this could result in the body font being much larger than the headings if the user&#39;s setting is particularly large. Weigh the costs &amp; benefits with experimentation to determine what&#39;s right for your website. Ultimately, this website chooses not to honor Dynamic Type to prevent the issue described above.</p>
+    
   </div>
 </body>
 </html>
