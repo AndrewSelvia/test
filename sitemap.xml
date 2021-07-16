@@ -1,657 +1,677 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andrew.selvia.com/architecture/ideas.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/architecture/ideas.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/architecture/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/architecture/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/career/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/career/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/career/interviewing.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/career/interviewing.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/colophon/content-updates.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/colophon/content-updates.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/colophon/hosting.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/colophon/hosting.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/colophon/icons.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/colophon/icons.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/colophon/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/colophon/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/colophon/progress.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/colophon/progress.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/design/command-line-interface.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/design/command-line-interface.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/design/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/design/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/education/data-science.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/education/data-science.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/education/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/education/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/education/machine-learning.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/education/machine-learning.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/games/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/games/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/games/pokemon/complete-a-living-dex.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/games/pokemon/complete-a-living-dex.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/games/pokemon/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/games/pokemon/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/hardware/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/hardware/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/hardware/lg-ultrafine-5k.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/hardware/lg-ultrafine-5k.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/identity/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/identity/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/identity/memoji.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/identity/memoji.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/journaling/configure-gpg-signing-in-working-copy.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/journaling/configure-gpg-signing-in-working-copy.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/journaling/enable-code-syntax-highlighting-in-ia-writer-previews.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/journaling/enable-code-syntax-highlighting-in-ia-writer-previews.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/journaling/expose-working-copy-as-a-document-provider.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/journaling/expose-working-copy-as-a-document-provider.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/journaling/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/journaling/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/marketing/capture-iphone-screenshots-with-consistent-time.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/marketing/capture-iphone-screenshots-with-consistent-time.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/marketing/embed-screenshots-in-apple-product-images.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/marketing/embed-screenshots-in-apple-product-images.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/marketing/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/marketing/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/music/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/music/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/music/performances.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/music/performances.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/research/consumer/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/research/consumer/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/research/consumer/services/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/research/consumer/services/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/research/ideas.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/research/ideas.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/research/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/research/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/research/psychedelics/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/research/psychedelics/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/research/psychedelics/people.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/research/psychedelics/people.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/akka/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/akka/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/akka/streams/ecosystem.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/akka/streams/ecosystem.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/akka/streams/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/akka/streams/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/akka/streams/integrate-with-akka-cluster.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/akka/streams/integrate-with-akka-cluster.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/alpakka/get-started.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/alpakka/get-started.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/alpakka/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/alpakka/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/aws/billing-alarms.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/aws/billing-alarms.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/aws/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/aws/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/browsers/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/browsers/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/browsers/safari/empty-caches.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/browsers/safari/empty-caches.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/browsers/safari/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/browsers/safari/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/browsers/safari/open-a-local-html-file.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/browsers/safari/open-a-local-html-file.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/commands/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/commands/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/commands/sed/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/commands/sed/index.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/commands/sed/replace-string-with-substitution-containing-slashes.xhtml
+      https://andrew.selvia.com/journal/software/developer/commands/sed/replace-string-with-substitution-containing-slashes.xhtml
     </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/css/adapt-svg-icons-to-dark-mode.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/adapt-svg-icons-to-dark-mode.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/css/center-a-button.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/center-a-button.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/css/change-link-color-on-hover.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/change-link-color-on-hover.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/css/create-a-color-gradient.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/create-a-color-gradient.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/css/dark-mode.xhtml</loc>
-  </url>
-  <url>
-    <loc>
-      https://andrew.selvia.com/software/developer/css/decide-whether-to-put-a-link-in-a-header-or-vice-versa.xhtml
-    </loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/dark-mode.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/css/disable-permanent-hover-effects-on-touch-screen-devices.xhtml
-    </loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/css/fit-an-image-within-its-container.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/css/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>
-      https://andrew.selvia.com/software/developer/css/lay-out-a-web-page-correctly-on-iphones-with-notches-in-landscape.xhtml
-    </loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/css/offset-anchor-links.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/css/set-the-viewport.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/docker/add-curl-dynamically.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/docker/get-a-shell-into-a-running-container.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/docker/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/docker/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/docker/limit-container-memory.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/docker/parameterize-a-dockerfile.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/favicons.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/git/geotag-commits.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/git/ignore-changes-to-tracked-file.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/git/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/actions/build-a-scala-app.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/actions/checkout-multiple-repos.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/actions/deploy-an-app-to-google-kubernetes-engine.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/actions/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/actions/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/actions/upload-files-to-google-cloud-storage.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/github/mirroring.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/google-cloud-platform/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>
-      https://andrew.selvia.com/software/developer/google-cloud-platform/google-kubernetes-engine/create-an-ingress-to-load-balance-over-the-cluster.xhtml
+      https://andrew.selvia.com/journal/software/developer/css/decide-whether-to-put-a-link-in-a-header-or-vice-versa.xhtml
     </loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/google-cloud-platform/google-kubernetes-engine/get-started.xhtml
+      https://andrew.selvia.com/journal/software/developer/css/disable-permanent-hover-effects-on-touch-screen-devices.xhtml
     </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/google-cloud-platform/google-kubernetes-engine/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/fit-an-image-within-its-container.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/index.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/google-cloud-platform/google-kubernetes-engine/perform-a-rolling-update.xhtml
+      https://andrew.selvia.com/journal/software/developer/css/lay-out-a-web-page-correctly-on-iphones-with-notches-in-landscape.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/offset-anchor-links.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/css/set-the-viewport.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/docker/add-curl-dynamically.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/docker/get-a-shell-into-a-running-container.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/docker/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/docker/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/docker/limit-container-memory.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/docker/parameterize-a-dockerfile.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/favicons.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/git/geotag-commits.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/git/ignore-changes-to-tracked-file.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/git/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/github/actions/build-a-scala-app.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/github/actions/checkout-multiple-repos.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/github/actions/deploy-an-app-to-google-kubernetes-engine.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/github/actions/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/github/actions/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/github/actions/upload-files-to-google-cloud-storage.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/github/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/github/mirroring.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/google-cloud-platform/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/google-cloud-platform/google-kubernetes-engine/create-an-ingress-to-load-balance-over-the-cluster.xhtml
     </loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/google-cloud-platform/google-kubernetes-engine/use-a-static-ip-address.xhtml
+      https://andrew.selvia.com/journal/software/developer/google-cloud-platform/google-kubernetes-engine/get-started.xhtml
     </loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/google-cloud-platform/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/google-cloud-storage.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/integrated-development-environments/index.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/integrated-development-environments/intellij-idea/features.xhtml
+      https://andrew.selvia.com/journal/software/developer/google-cloud-platform/google-kubernetes-engine/index.xhtml
     </loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/integrated-development-environments/intellij-idea/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/integrated-development-environments/intellij-idea/plugins.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/integrated-development-environments/xcode/extensions.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/integrated-development-environments/xcode/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/jupyter/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/jupyter/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/kubernetes/configure-memory-resources.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/kubernetes/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/kubernetes/use-jsonpath.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/latex/guides.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/latex/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/latex/texify-idea.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/latex/troubleshooting.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/machine-learning/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/machine-learning/non-python-tooling.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/matplotlib/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/matplotlib/troubleshooting.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/namecheap/create-private-email-mailbox.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/namecheap/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/operating-systems/index.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/operating-systems/use-environment-variables-in-integrated-development-environments.xhtml
+      https://andrew.selvia.com/journal/software/developer/google-cloud-platform/google-kubernetes-engine/perform-a-rolling-update.xhtml
     </loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play-json/convert-a-jsvalue-to-a-string.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play-json/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play-json/snake-case-keys.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/configure-https.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/configure-memory.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/integrate-with-akka.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/respond-with-html-string.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/run-on-google-kubernetes-engine.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/play/run-via-docker.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/python/generate-requirements-txt.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/python/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/python/naming-conventions.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/developer/return-a-file-stored-in-google-cloud-storage-via-a-play-application.xhtml
+      https://andrew.selvia.com/journal/software/developer/google-cloud-platform/google-kubernetes-engine/use-a-static-ip-address.xhtml
     </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/dependencies.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/google-cloud-platform/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/exclude-transitive-dependencies.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/google-cloud-storage.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/fix-unknown-artifact-warning-in-intellij-idea.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/get-build-parameters-in-shell.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/pass-arguments-via-sbt.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/plugins.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/sbt-buildinfo.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/sbt-docker.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/sbt-extras.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/sbt-native-packager.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sbt/view-dependency-tree.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/adoption.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/block-until-a-future-completes.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/convert-between-list-and-tuple.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/do-not-ignore-the-g8-directory-created-by-giter8.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/execute-shell-commands-from-scala-code.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/scala/tools.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/serve-website-on-google-kubernetes-engine-over-https.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/slf4j/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/slf4j/slf4j.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/store-secrets.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sttp/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/sttp/parse-response-as-json.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/ast-explorer.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/swift-on-server/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/swift-on-server/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/swift-on-server/open-source-projects.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/swift-on-server/swift-cluster-membership.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swift/swift-on-server/use-clion.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swiftui/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/swiftui/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/tensorflow/get-started.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/tensorflow/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/tensorflow/macos-support.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/tensorflow/troubleshooting.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/uikit/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/uikit/wkwebview-versus-sfsafariviewcontroller.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/upload-files-to-google-cloud-storage-via-a-github-action.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/vapor/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/vapor/integrate-with-docker.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/vapor/view-public-assets-when-run-in-xcode.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/yaml/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/developer/yaml/yaml-vs-yml.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/apps/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/apps/keynote/animations.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/apps/keynote/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/integrated-development-environments/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/integrated-development-environments/jetbrains/features.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/integrated-development-environments/jetbrains/index.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/integrated-development-environments/jetbrains/settings.xhtml</loc>
-  </url>
-  <url>
-    <loc>https://andrew.selvia.com/software/user/integrated-development-environments/jetbrains/webstorm/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/integrated-development-environments/index.xhtml</loc>
   </url>
   <url>
     <loc>
-      https://andrew.selvia.com/software/user/integrated-development-environments/jetbrains/webstorm/integrate-multiple-identically-named-directories-into-a-single-webstorm-project.xhtml
+      https://andrew.selvia.com/journal/software/developer/integrated-development-environments/intellij-idea/features.xhtml
     </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/user/operating-systems/index.xhtml</loc>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/integrated-development-environments/intellij-idea/index.xhtml
+    </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/user/operating-systems/macos/apps.xhtml</loc>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/integrated-development-environments/intellij-idea/plugins.xhtml
+    </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/user/operating-systems/macos/bootstrap.xhtml</loc>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/integrated-development-environments/xcode/extensions.xhtml
+    </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/user/operating-systems/macos/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/integrated-development-environments/xcode/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/software/user/screen-brightness.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/jupyter/get-started.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/test.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/jupyter/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/change-link-colors-in-dark-mode.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/kubernetes/configure-memory-resources.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/create-a-navigation-bar.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/kubernetes/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/create-a-sidebar.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/kubernetes/use-jsonpath.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/digital-gardening.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/latex/guides.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/get-sf-symbols-in-svg-format.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/latex/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/honor-dynamic-type-settings-on-a-website.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/latex/texify-idea.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/host-a-website.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/latex/troubleshooting.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/index.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/machine-learning/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/remove-google-contacts-and-holidays-calendars.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/machine-learning/non-python-tooling.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/similar-websites.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/matplotlib/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/static-site-generators.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/matplotlib/troubleshooting.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/syntax-highlighting.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/namecheap/create-private-email-mailbox.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/use-the-system-font-on-a-website.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/namecheap/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/todo/view-websites-in-dark-mode.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/operating-systems/index.xhtml</loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/writing/index.xhtml</loc>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/operating-systems/use-environment-variables-in-integrated-development-environments.xhtml
+    </loc>
   </url>
   <url>
-    <loc>https://andrew.selvia.com/writing/terminology.xhtml</loc>
+    <loc>https://andrew.selvia.com/journal/software/developer/play-json/convert-a-jsvalue-to-a-string.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play-json/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play-json/snake-case-keys.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/configure-https.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/configure-memory.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/integrate-with-akka.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/respond-with-html-string.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/run-on-google-kubernetes-engine.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/play/run-via-docker.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/python/generate-requirements-txt.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/python/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/python/naming-conventions.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/return-a-file-stored-in-google-cloud-storage-via-a-play-application.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/dependencies.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/exclude-transitive-dependencies.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/fix-unknown-artifact-warning-in-intellij-idea.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/get-build-parameters-in-shell.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/pass-arguments-via-sbt.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/plugins.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/sbt-buildinfo.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/sbt-docker.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/sbt-extras.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/sbt-native-packager.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sbt/view-dependency-tree.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/adoption.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/block-until-a-future-completes.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/convert-between-list-and-tuple.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/scala/do-not-ignore-the-g8-directory-created-by-giter8.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/execute-shell-commands-from-scala-code.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/scala/tools.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/serve-website-on-google-kubernetes-engine-over-https.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/slf4j/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/slf4j/slf4j.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/store-secrets.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sttp/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/sttp/parse-response-as-json.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/ast-explorer.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/swift-on-server/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/swift-on-server/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/swift-on-server/open-source-projects.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/swift-on-server/swift-cluster-membership.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swift/swift-on-server/use-clion.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swiftui/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/swiftui/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/tensorflow/get-started.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/tensorflow/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/tensorflow/macos-support.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/tensorflow/troubleshooting.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/uikit/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/uikit/wkwebview-versus-sfsafariviewcontroller.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/developer/upload-files-to-google-cloud-storage-via-a-github-action.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/vapor/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/vapor/integrate-with-docker.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/vapor/view-public-assets-when-run-in-xcode.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/yaml/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/developer/yaml/yaml-vs-yml.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/apps/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/apps/keynote/animations.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/apps/keynote/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/integrated-development-environments/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/integrated-development-environments/jetbrains/features.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/integrated-development-environments/jetbrains/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/integrated-development-environments/jetbrains/settings.xhtml</loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/user/integrated-development-environments/jetbrains/webstorm/index.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>
+      https://andrew.selvia.com/journal/software/user/integrated-development-environments/jetbrains/webstorm/integrate-multiple-identically-named-directories-into-a-single-webstorm-project.xhtml
+    </loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/operating-systems/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/operating-systems/macos/apps.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/operating-systems/macos/bootstrap.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/operating-systems/macos/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/software/user/screen-brightness.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/test.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/change-link-colors-in-dark-mode.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/create-a-navigation-bar.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/create-a-sidebar.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/digital-gardening.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/get-sf-symbols-in-svg-format.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/honor-dynamic-type-settings-on-a-website.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/host-a-website.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/remove-google-contacts-and-holidays-calendars.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/similar-websites.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/static-site-generators.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/syntax-highlighting.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/use-the-system-font-on-a-website.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/todo/view-websites-in-dark-mode.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/writing/index.xhtml</loc>
+  </url>
+  <url>
+    <loc>https://andrew.selvia.com/journal/writing/terminology.xhtml</loc>
   </url>
 </urlset>
