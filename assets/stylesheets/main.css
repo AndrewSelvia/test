@@ -40,34 +40,6 @@ pre > code {
     font-family: ui-monospace;
 }
 
-.openbtn {
-    cursor: pointer;
-    /*fill: var(--navbar-button-fill);*/
-    fill: currentColor;
-
-    /*center button*/
-    /*margin: 0;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*-ms-transform: translateY(-50%);*/
-    /*transform: translateY(-50%);*/
-}
-
-.openbtn:hover {
-    fill: url(#header-shape-gradient);
-}
-
-.row {
-    display: flex;
-    align-items: center;
-}
-
-.directory-contents-list-item-div {
-    display: flex;
-    align-items: center;
-}
-
-
 /*
 Apple Colors
 https://gist.github.com/lithammer/e9e68c131297c3158a654c0fdfc4111a
@@ -219,11 +191,10 @@ blockquote {
 
 #nav-list-children {
     list-style: none;
-    /*padding-left: 0;*/
+    padding-inline-start: 0;
 }
 
 #nav-list-children li {
-    height: 19px; /* the height of the doc.fill icon; force it for all rows so that directories and documents are evenly-spaced */
     padding-bottom: 3px;
 }
 
@@ -240,4 +211,33 @@ blockquote {
 .doc {
     padding-left: 2px; /* 2 + 15 (width of doc.fill icon) + 2 = 19; so, the doc.fill icon looks centered w.r.t. folder icon */
     padding-right: 1px; /* 3 (folder.padding-right) - 2 (doc.padding-left) = 1; so folder and doc text align */
+}
+
+.openbtn {
+    cursor: pointer;
+    fill: currentColor;
+}
+
+.openbtn:hover {
+    fill: url(#header-shape-gradient);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.directory-contents-list-item-div {
+    display: flex;
+}
+
+.directory-contents-list-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19px;
+}
+
+.directory-contents-list-item-link {
+    width: calc(100% - 22px); /* Enables the link to resize to dynamically fit the horizontal space (i.e. watch as you decrease the window width or if you are on a horizontally-constrained screen like a phone); 100% is the width of the parent element; (22 = 19 + 3)px is the static width of (the doc/folder icon+padding) */
 }
