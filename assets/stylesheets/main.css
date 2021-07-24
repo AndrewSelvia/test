@@ -228,6 +228,11 @@ blockquote {
     align-items: center;
 }
 
+.row > ul {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 .directory-contents-list-item-div {
     display: flex;
 }
