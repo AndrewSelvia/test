@@ -249,3 +249,7 @@ blockquote {
 ul {
     width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--ul-padding-left) + var(--main-padding-right)));
 }
+
+ol {
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--ol-padding-left) + var(--main-padding-right)));
+}

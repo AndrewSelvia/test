@@ -25,5 +25,16 @@ window.onload = function(){
     document.documentElement.style.setProperty('--main-offset-left', `${main.offsetLeft}px`);
     document.documentElement.style.setProperty('--main-padding-left', getStyle(main, 'padding-left'));
     document.documentElement.style.setProperty('--main-padding-right', getStyle(main, 'padding-right'));
-    document.documentElement.style.setProperty('--ul-padding-left', getStyle(Array.from(document.getElementsByTagName('ul')).filter(function(element) { return element.className === "" })[0], 'padding-left'));
+    try {
+        let firstNonNavigationULElement = Array.from(document.getElementsByTagName('ul')).filter(function(element) { return element.className === "" })[0];
+        document.documentElement.style.setProperty('--ul-padding-left', getStyle(firstNonNavigationULElement, 'padding-left'));
+    } catch(e) {
+        console.log('--ul-padding-left could not be set');
+    }
+    try {
+        let firstOLElement = document.getElementsByTagName('ol')[0];
+        document.documentElement.style.setProperty('--ol-padding-left', getStyle(firstOLElement, 'padding-left'));
+    } catch(e) {
+        console.log('--ul-padding-left could not be set');
+    }
 }
