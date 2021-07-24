@@ -35,6 +35,13 @@ window.onload = function(){
         let firstOLElement = document.getElementsByTagName('ol')[0];
         document.documentElement.style.setProperty('--ol-padding-left', getStyle(firstOLElement, 'padding-left'));
     } catch(e) {
-        console.log('--ul-padding-left could not be set');
+        console.log('--ol-padding-left could not be set');
+    }
+    try {
+        let firstBlockquoteElement = document.getElementsByTagName('blockquote')[0];
+        document.documentElement.style.setProperty('--blockquote-padding-left', getStyle(firstBlockquoteElement, 'padding-left'));
+        document.documentElement.style.setProperty('--blockquote-border-left-width', getStyle(firstBlockquoteElement, 'border-left-width'));
+    } catch(e) {
+        console.log('--ol-padding-left could not be set');
     }
 }

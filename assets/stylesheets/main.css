@@ -242,7 +242,7 @@ blockquote {
     width: calc(100% - 22px); /* Enables the link to resize to dynamically fit the horizontal space (i.e. watch as you decrease the window width or if you are on a horizontally-constrained screen like a phone); 100% is the width of the parent element; (22 = 19 + 3)px is the static width of (the doc/folder icon+padding) */
 }
 
-#main > pre {
+#main > pre, h1, h2, h3, h4, h5, h6 {
     width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--main-padding-right)));
 }
 
@@ -252,4 +252,8 @@ ul {
 
 ol {
     width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--ol-padding-left) + var(--main-padding-right)));
+}
+
+blockquote {
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--blockquote-padding-left) + var(--blockquote-border-left-width) + var(--main-padding-right)));
 }
