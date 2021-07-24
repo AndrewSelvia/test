@@ -67,7 +67,7 @@
       </li>
       <li>
         <p>Download the photo as described in <a href="https://medium.com/@matheusmaus/how-to-have-your-memoji-as-your-profile-picture-cca06cdc8cbb">this article</a>.</p>
-        <p><img src="/photos/input.png" alt="Portrait photo extracted from icloud.com"/></p>
+        <p><img src="https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/input.png" alt="Portrait photo extracted from icloud.com"/></p>
       </li>
       <li>
         <p>Open it in Preview.</p>
@@ -85,7 +85,7 @@ HEIGHT=$(identify -ping -format &quot;%h&quot; $INPUT_FILE_NAME)
 X=$(echo &quot;scale=2;($WIDTH-$LENGTH)/2&quot; | bc)
 Y=$(echo &quot;scale=2;($HEIGHT-$LENGTH)/2&quot; | bc)            
 convert $INPUT_FILE_NAME -crop ${LENGTH}x$LENGTH+$X+$Y $OUTPUT_FILE_NAME</code></pre>
-        <p><img src="/photos/output.png" alt="Square photo centered on MeMoji"/></p>
+        <p><img src="https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/output.png" alt="Square photo centered on MeMoji"/></p>
       </li>
     </ol>
     <p>Now, all that&#39;s left to do is replace all your profile photos with the output image. If only that could be automated so easily...</p>
