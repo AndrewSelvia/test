@@ -166,6 +166,7 @@ blockquote {
     border-left: 1px solid var(--blockquote-color);
     color: var(--blockquote-color);
     vertical-align: baseline;
+    margin-right: 0
 }
 
 .breadcrumb {
@@ -255,5 +256,13 @@ ol {
 }
 
 blockquote {
-    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--blockquote-padding-left) + var(--blockquote-border-left-width) + var(--main-padding-right)));
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--blockquote-border-left-width) + var(--blockquote-padding-left) + var(--main-padding-right)));
+}
+
+blockquote > ul {
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--blockquote-border-left-width) + var(--blockquote-padding-left) + var(--ul-padding-left) + var(--main-padding-right)));
+}
+
+blockquote > ol {
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--blockquote-border-left-width) + var(--blockquote-padding-left) + var(--ol-padding-left) + var(--main-padding-right)));
 }
