@@ -287,3 +287,7 @@ blockquote > ol {
     -ms-hyphens: auto;
     hyphens: auto;
 }
+
+.openbtn {
+    padding-right: 10px;
+}
