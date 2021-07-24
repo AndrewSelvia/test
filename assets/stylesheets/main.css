@@ -266,3 +266,12 @@ blockquote > ul {
 blockquote > ol {
     width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--blockquote-border-left-width) + var(--blockquote-padding-left) + var(--ol-padding-left) + var(--main-padding-right)));
 }
+
+
+#main > ul > li > ol {
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--ul-padding-left) + var(--ol-padding-left) + var(--main-padding-right)));
+}
+
+#main > ul > li > ol > li > pre {
+    width: calc(100vw - (var(--main-offset-left) + var(--main-padding-left) + var(--ul-padding-left) + var(--ol-padding-left) + var(--main-padding-right)));
+}
