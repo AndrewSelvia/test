@@ -129,6 +129,7 @@ https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/
     padding-right: 12px; /* Just enough space to make the scroll bar not clash. */
     /*top: 44px;*/
     overflow-x: scroll;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 /*https://webkit.org/blog/7929/designing-websites-for-iphone-x/*/
